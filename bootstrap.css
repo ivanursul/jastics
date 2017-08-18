@@ -1184,7 +1184,6 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
   font-weight: 700;
   line-height: 1.1;
   color: #000000;
@@ -1289,6 +1288,7 @@ h6,
 }
 p {
   margin: 0 0 10.5px;
+  font-size: 20px;
 }
 .lead {
   margin-bottom: 21px;
@@ -1413,6 +1413,12 @@ a.bg-danger:focus {
   margin: 42px 0 21px;
   border-bottom: 1px solid #eeeeee;
 }
+
+.about-us {
+  padding-bottom: 9.5px;
+  margin: 42px 0 21px;
+}
+
 ul,
 ol {
   margin-top: 0;
@@ -6876,17 +6882,17 @@ html, body{height:100%; margin:0;padding:0}
   font-family: "Raleway"
 }
 
-@media (min-width: 1000px) and (max-width: 1800px) {
+@media (min-width: 700px) and (max-width: 1800px) {
   .main-logo {
     width: 25%;
     height: 25%;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   .main-logo {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
   }
 }
 
@@ -6894,4 +6900,18 @@ html, body{height:100%; margin:0;padding:0}
     color: #000000;
     font-size: 17px;
     margin: 5px;
+}
+
+.team-head {
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+
+.member {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.member-position {
+  font-size: 17px;
 }
