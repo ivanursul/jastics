@@ -6872,7 +6872,22 @@ html, body{height:100%; margin:0;padding:0}
 
 .main-subheader {
   font-size: 20px;
+  margin-top: 20px;
   font-family: "Raleway"
+}
+
+@media (min-width: 1000px) and (max-width: 1800px) {
+  .main-logo {
+    width: 25%;
+    height: 25%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-logo {
+    width: 40%;
+    height: 40%;
+  }
 }
 
 .competence-tags {
