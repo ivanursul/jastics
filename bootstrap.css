@@ -6904,7 +6904,8 @@ html, body{height:100%; margin:0;padding:0}
 
 .team-head {
   font-size: 30px;
-  margin-bottom: 70px;
+  padding-bottom: 9.5px;
+  margin: 42px 0 21px;
 }
 
 .member {
@@ -6913,5 +6914,15 @@ html, body{height:100%; margin:0;padding:0}
 }
 
 .member-position {
-  font-size: 17px;
+  font-size: 15px;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person {
+  margin-bottom: 30px;
 }
