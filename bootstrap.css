@@ -3475,12 +3475,13 @@ input[type="button"].btn-block {
 }
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
 }
 .fade.in {
   opacity: 1;
+  transform: scale(1);
 }
 .collapse {
   display: none;
@@ -6878,17 +6879,32 @@ a.mail {
   font-family: "Raleway"
 }
 
-@media (min-width: 700px) and (max-width: 1800px) {
+@media (min-width: 800px) and (max-width: 1800px) {
   .main-logo {
     width: 25%;
     height: 25%;
   }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 650px) and (max-width: 800px) {
   .main-logo {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 650px) {
+  .main-logo {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .main-logo {
+    width: 70%;
+    height: 70%;
   }
 }
 
@@ -6987,13 +7003,6 @@ img.center {
 }
 
 
-
-
-
-
-
-
-
 .fullscreen .modal-dialog {
 		margin: 0 0 0 0;
 		width: 100%;
@@ -7021,7 +7030,7 @@ img.center {
 	}
 
 	.fullscreen .modal-body a {
-		color: #333;
+		color: #272A47;
 		font-size: 300%;
 	}
 
@@ -7036,7 +7045,7 @@ img.center {
 		}
 
 		.fullscreen .modal-body a {
-			color: #333;
+			color: #272A47;
 			font-size: 200%;
 			text-transform: uppercase;
 			font-weight: 700;
