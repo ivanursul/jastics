@@ -6971,3 +6971,17 @@ img.center {
     padding: 20px;
     font-size: 40px;
 }
+
+.expertise-title {
+  font-size: 30px;
+}
+
+.expertise_description {
+  padding-top: 30px;
+}
+
+.expertise-tags {
+  word-spacing: 8px;
+  padding-top: 20px;
+  font-weight: 600;
+}

@@ -41,18 +41,28 @@
 
     <div class="container">
       <div class="competence-header competence-tags">
-        <a class="competence-tag" onclick="showAnitmation('data_processing')" href="#">#Data Processing</a>
-        <a class="competence-tag" onclick="showAnitmation('cloud_solutions')" href="#">#Cloud Solutions</a>
-        <a class="competence-tag" onclick="showAnitmation('serverless')" href="#">#Serverless</a>
-        <a class="competence-tag" onclick="showAnitmation('devops')" href="#">#DevOps</a>
+        <a id="data_processing" class="competence-tag" onclick="showExpertise('data_processing')" href="#">
+          #Data Processing
+        </a>
+        <a id="cloud_solutions" class="competence-tag" onclick="showExpertise('cloud_solutions')" href="#">
+          #Cloud Solutions
+        </a>
+        <a id="serverless" class="competence-tag" onclick="showExpertise('serverless')" href="#">
+          #Serverless
+        </a>
+        <a id="devops" class="competence-tag" onclick="showExpertise('devops')" href="#">
+          #DevOps
+        </a>
       </div>
       <div class="row competence">
         <div class="col-md-6">
           <img id="animationImg" width="90%" height="90%" src="images/data_processing.gif" hidden>
         </div>
-        <div class="col-md-6">
-          <div id="title" class="text-center"></div>
-          <div id="description"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div id="title" expertise-name="" class="text-center expertise-title"></div>
+          <div id="tags" class=" expertise-tags"></div>
+          <div class="expertise_description" id="description"></div>
         </div>
       </div>
     </div>
@@ -61,44 +71,72 @@
     <script src="bootstrap.min.js"></script>
     <script src="custom.js"></script>
     <script type="text/javascript">
-      function showAnitmation(animationName) {
-        console.log("Animation: " + animationName);
+      var data = {
+        "data_processing": {
+          "title": "Data Processing",
+          "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+          tags: [
+            "Databases", "NoSql", "BigData"
+          ],
+          "next": "cloud_solutions"
+        },
+        "cloud_solutions": {
+          "title": "Cloud Solutions",
+          "message": "Cloud solutions bla bla bla",
+          tags: [
+            "Amazon", "DigitalOcean", "Azure"
+          ],
+          "next": "serverless"
+        },
+        "serverless": {
+          "title": "Serverless",
+          "message": "Serverless bla bla bla",
+          tags: [
+            "Lambda"
+          ],
+          "next": "devops"
+        },
+        "devops": {
+          "title": "DevOps",
+          "message": "DevOps bla bla bla",
+          tags: [
+            "CI", "Docker", "Monitoring", "Ansible"
+          ],
+          "next": "data_processing"
+        },
+      };
+
+      function showExpertise(expertiseName) {
+        console.log("Animation: " + expertiseName);
+
+        var currentExpertiseName = $('#title').attr("expertise-name");
+        $('#' + currentExpertiseName).css("text-decoration", "none");
+
         $('#animationImg').show();
 
-        var data = {
-          "data_processing": {
-            "title": "Data Processing",
-            "message": "Data processing bla bla bla",
-            tags: [
+        var expertise = data[expertiseName];
+        var tags = expertise.tags.map(function(tag) { return "#" + tag }).join("  ");
 
-            ]
-          },
-          "cloud_solutions": {
-            "title": "Cloud Solutions",
-            "message": "Cloud solutions bla bla bla",
-            tags: [
+        $('#animationImg').attr("src", "images/" + expertiseName + ".gif");
+        $('#title').text(expertise.title);
+        $('#description').text(expertise.message);
+        $('#tags').text(tags);
 
-            ]
-          },
-          "serverless": {
-            "title": "Serverless",
-            "message": "Serverless bla bla bla",
-            tags: [
+        $("#" + expertiseName).css("text-decoration", "underline");
 
-            ]
-          },
-          "devops": {
-            "title": "DevOps",
-            "message": "DevOps bla bla bla",
-            tags: [
-
-            ]
-          },
-        }
-
-        $('#animationImg').attr("src", "images/" + animationName + ".gif");
-        $('#title').text(data[animationName].title);
+        $('#title').attr("expertise-name", expertiseName);
       }
+
+      function changeExpertise() {
+        var expertiseName = $('#title').attr("expertise-name");
+        console.log("Scheduled task: " + data[expertiseName].title);
+        showExpertise(data[expertiseName].next);
+      }
+
+      setInterval(changeExpertise, 5000);
+      var expertiseName = Object.keys(data)[0];
+
+      showExpertise(expertiseName);
     </script>
 </body>
 </html>
