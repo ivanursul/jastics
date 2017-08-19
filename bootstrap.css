@@ -1088,6 +1088,7 @@ html {
 body {
   font-family: "Raleway";
   line-height: 1.42857143;
+  font-size: 20px;
   background-color: #ffffff;
 }
 input,
@@ -1413,6 +1414,7 @@ a.bg-danger:focus {
   margin: 42px 0 21px;
   border-bottom: 1px solid #eeeeee;
 }
+
 
 .about-us {
   padding-bottom: 9.5px;
@@ -4504,7 +4506,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #eeeeee;
 }
 .navbar-default .navbar-brand {
-  color: #000000;
+  color: #272A47;
+  font-size: 23px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -6865,15 +6868,8 @@ html, body{height:100%; margin:0;padding:0}
   margin:0 auto;
 }
 
-.main-menu-label {
-  background-color: #00BFFF;
-  color: #FFFFFF;
-  padding: 10px 10px 10px 10px;
-  border-radius: 10px;
-}
-
-.main-menu-h1 {
-    padding: 20px;
+a.mail {
+  color: #FFFFFF
 }
 
 .main-subheader {
@@ -6896,25 +6892,49 @@ html, body{height:100%; margin:0;padding:0}
   }
 }
 
-.competence-tags {
+.default_text {
+  font-size: 20px;
+}
+
+.competence-tag {
     color: #000000;
-    font-size: 17px;
+    font-size: 20px;
     margin: 5px;
+}
+
+.competence-tags {
+
+}
+
+.competence-header {
+  padding-bottom: 9.5px;
+  margin: 42px 0 10px;
+}
+
+.competence {
+  padding-top: 60px;
 }
 
 .team-head {
   font-size: 30px;
   padding-bottom: 9.5px;
-  margin: 42px 0 21px;
+  margin: 42px 0 0;
+}
+
+.team-subheader {
+  font-size: 15px;
+  margin-bottom: 50px;
 }
 
 .member {
   margin-top: 10px;
   font-size: 20px;
+  color: #000000;
 }
 
 .member-position {
   font-size: 15px;
+  color: #999999;
 }
 
 img.center {
@@ -6925,4 +6945,29 @@ img.center {
 
 .person {
   margin-bottom: 30px;
+}
+
+.contact-us-label {
+    font-size: 40px;
+    background-color: #00BFFF;
+    color: #FFFFFF;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.contact-us-head {
+  font-size: 20px;
+}
+
+.main-menu-label {
+  background-color: #272A47;
+  color: #FFFFFF;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.main-menu-h1 {
+    padding: 20px;
+    font-size: 40px;
 }
