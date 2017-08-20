@@ -42,9 +42,6 @@
 
     <div class="container">
       <div class="competence-header competence-tags">
-        <a id="data_processing" class="competence-tag" onclick="showExpertiseOnClick('data_processing')" href="#">
-          #Digital
-        </a>
         <a id="cloud_solutions" class="competence-tag" onclick="showExpertiseOnClick('cloud_solutions')" href="#">
           #Cloud Solutions
         </a>
@@ -53,6 +50,12 @@
         </a>
         <a id="devops" class="competence-tag" onclick="showExpertiseOnClick('devops')" href="#">
           #DevOps
+        </a>
+        <a id="highload" class="competence-tag" onclick="showExpertiseOnClick('highload')" href="#">
+          #HighLoad
+        </a>
+        <a id="uiux" class="competence-tag" onclick="showExpertiseOnClick('uiux')" href="#">
+          #UI/UX
         </a>
       </div>
       <div class="row competence">
@@ -73,17 +76,9 @@
     <script src="custom.js"></script>
     <script type="text/javascript">
       var data = {
-        "data_processing": {
-          "title": "Data Processing",
-          "message": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p> <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>",
-          tags: [
-            "Databases", "NoSql", "BigData"
-          ],
-          "next": "cloud_solutions"
-        },
         "cloud_solutions": {
           "title": "Cloud Solutions",
-          "message": "Cloud solutions bla bla bla",
+          "message": "<p>We live in a world, where nowadays machines cost less than human work. Without a doubt, you can rent a machine from any cloud provider and host your software within a minutes. Comparing to the classical physical servers approach, does it saves your money and time in the same way? At Jastics Labs, we collected our best knowledge to deliver the best experience for you.</p><p>We can help you move your legacy application to the cloud, wrap it into a bunch of monitor tools and help you know what's goind on with your software 24/7</p>",
           tags: [
             "Amazon", "DigitalOcean", "Azure"
           ],
@@ -103,7 +98,23 @@
           tags: [
             "CI", "Docker", "Monitoring", "Ansible"
           ],
-          "next": "data_processing"
+          "next": "highload"
+        },
+        "highload": {
+          "title": "High Load",
+          "message": "High Load bla bla bla",
+          tags: [
+            "tag1", "tag2", "tag3", "tag3"
+          ],
+          "next": "uiux"
+        },
+        "uiux": {
+          "title": "UI/UX ",
+          "message": "UI/UX bla bla bla",
+          tags: [
+            "tag1", "tag2", "tag3", "tag3"
+          ],
+          "next": "cloud_solutions"
         },
       };
 
@@ -143,7 +154,7 @@
         }
       }
 
-      setInterval(changeExpertise, 20000);
+      setInterval(changeExpertise, 30000);
       var expertiseName = Object.keys(data)[0];
 
       showExpertise(expertiseName);
