@@ -4288,6 +4288,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 21px;
   height: 60px;
 }
+
+.modal-brand {
+  float: left;
+  padding-top: 5px;
+  padding-left: 0px;
+  color: #272A47;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 21px;
+  height: 60px;
+}
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
@@ -5865,11 +5877,15 @@ button.list-group-item-danger.active:focus {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+
+
 button.close {
-  padding: 0;
+  padding: 9px 10px;
+  margin-bottom: 13px;
   cursor: pointer;
   background: transparent;
   border: 0;
+  color: #272A47;
   -webkit-appearance: none;
 }
 .modal-open {
@@ -6886,15 +6902,15 @@ a.mail {
 
 @media (min-width: 650px) and (max-width: 800px) {
   .main-logo {
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
   }
 }
 
 @media (min-width: 500px) and (max-width: 650px) {
   .main-logo {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
   }
 }
 
@@ -7044,8 +7060,8 @@ img.center {
 
 		.fullscreen .modal-body a {
 			color: #272A47;
-			font-size: 200%;
+			font-size: 150%;
 			text-transform: uppercase;
-			font-weight: 700;
+			font-weight: 500;
 		}
 	}
