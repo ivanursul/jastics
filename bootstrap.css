@@ -4291,7 +4291,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 .modal-brand {
   float: left;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-left: 0px;
   color: #272A47;
   font-size: 23px;
@@ -5866,7 +5866,6 @@ button.list-group-item-danger.active:focus {
   line-height: 1;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
   filter: alpha(opacity=20);
 }
 .close:hover,
@@ -6891,6 +6890,10 @@ a.mail {
   font-size: 20px;
   margin-top: 20px;
   font-family: "Raleway"
+}
+
+.default-color {
+  color: #272A47;
 }
 
 @media (min-width: 800px) and (max-width: 1800px) {
