@@ -7068,3 +7068,9 @@ img.center {
 			font-weight: 500;
 		}
 	}
+
+
+
+.navbar-menu-iteam-selected {
+  text-decoration: underline;
+}
