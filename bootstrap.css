@@ -1099,8 +1099,9 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+
 a {
-  color: #eb6864;
+  color: #272A47;
   text-decoration: none;
 }
 a:hover,
@@ -6952,6 +6953,28 @@ a.mail {
   font-size: 30px;
   padding-bottom: 9.5px;
   margin: 42px 0 0;
+}
+
+.faq-head {
+  padding-bottom: 9.5px;
+  margin: 42px 0 0;
+}
+
+.faq-question-block {
+  padding-bottom: 30px;
+}
+
+.faq-question-block a {
+  text-decoration: underline;
+}
+
+.faq-question {
+  font-size: 18px;
+}
+
+.faq-answer {
+  padding-top: 12px;
+  font-size: 16px;
 }
 
 .team-subheader {
