@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="css/custom.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Preloading images for gallery -->
-    <link rel="prefetch" href="images/serverless.gif">
-    <link rel="prefetch" href="images/cloud_solutions.gif">
-    <link rel="prefetch" href="images/highload.gif">
-    <link rel="prefetch" href="images/uiux.gif">
   </head>
   <body data-gr-c-s-loaded="true" style="">
     <div class="navbar navbar-default navbar-fixed-top">
@@ -153,6 +147,18 @@
 
       showExpertise(expertiseName);
     </script>
+    <style>
+      #preloadedImages
+      {
+          width: 0px;
+          height: 0px;
+          display: inline;
+          background-image: url(images/serverless.gif);
+          background-image: url(images/cloud_solutions.gif);
+          background-image: url(images/highload.gif);
+          background-image: url(images/uiux.gif);
+      }
+    </style>
 </body>
 </html>
 
