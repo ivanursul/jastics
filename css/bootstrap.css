@@ -6898,10 +6898,10 @@ a.mail {
 }
 
 
-@media (min-width: 1300px) and (max-width: 1800px) {
+@media (min-width: 1300px) and (max-width: 2500px) {
   .main-logo {
-    width: 15%;
-    height: 15%;
+    width: 25%;
+    height: 25%;
   }
 }
 
