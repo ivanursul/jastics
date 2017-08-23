@@ -7097,3 +7097,9 @@ img.center {
 	}
 
 div#preload { display: none; }
+
+
+.container-full {
+  margin: 0 auto;
+  height: 100%;
+}
