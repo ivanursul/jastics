@@ -3239,18 +3239,18 @@ fieldset[disabled] .btn-success.focus {
 }
 .btn-info {
   color: #ffffff;
-  background-color: #336699;
+  background-color: #272A47;
   border-color: #336699;
 }
 .btn-info:focus,
 .btn-info.focus {
   color: #ffffff;
-  background-color: #264c73;
+  background-color: #272A47;
   border-color: #132639;
 }
 .btn-info:hover {
   color: #ffffff;
-  background-color: #264c73;
+  background-color: #272A47;
   border-color: #24476b;
 }
 .btn-info:active,
@@ -6947,6 +6947,14 @@ a.mail {
 
 .competence {
   padding-top: 60px;
+}
+
+.team {
+  margin-top: 100px;
+}
+
+.team-btn {
+  margin-top: 30px;
 }
 
 .team-head {
