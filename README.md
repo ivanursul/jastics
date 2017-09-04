@@ -1,2 +1,2 @@
 # jastics
-Jastics Labs site
+Jastics Labs website
