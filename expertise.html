@@ -47,9 +47,6 @@
         <a id="highload" class="competence-tag" onclick="showExpertiseOnClick('highload')" href="#">
           #HighLoad
         </a>
-        <a id="iot" class="competence-tag" onclick="showExpertiseOnClick('iot')" href="#">
-          #IOT
-        </a>
         <a id="uiux" class="competence-tag" onclick="showExpertiseOnClick('uiux')" href="#">
           #UI/UX
         </a>
@@ -57,7 +54,10 @@
       </div>
       <div class="row competence">
         <div class="col-md-6">
-          <img id="animationImg" width="90%" height="90%" src="" hidden>
+          <!-- <img id="animationImg" width="90%" height="90%" src="" hidden> -->
+          <video id="video" width="90%" height="90%" autoplay="autoplay" hidden loop>
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-5">
@@ -95,14 +95,6 @@
           tags: [
             "Performance", "Scalability"
           ],
-          "next": "iot"
-        },
-        "iot": {
-          "title": "Internet of things",
-          "message": "<p>Over the past decade internet grew up from a slow and unreliable to fast and resilient. The more internet grow - the more there is a need to write systems, that can survive under a high load, making performance, efficiency, scalability and resilience as a first class citizents in your systems.</p><p>Do you have a specific requirements on perfomance for you application? Write us a short letter with problem and let's discuss it</p>",
-          tags: [
-            "micro", "sensors"
-          ],
           "next": "uiux"
         },
         "uiux": {
@@ -128,12 +120,16 @@
         var currentExpertiseName = $('#title').attr("expertise-name");
         $('#' + currentExpertiseName).css("text-decoration", "none");
 
-        $('#animationImg').show();
+        $('#video').show();
 
         var expertise = data[expertiseName];
         var tags = expertise.tags.map(function(tag) { return "#" + tag }).join("  ");
 
-        $('#animationImg').attr("src", "images/" + expertiseName + ".gif");
+        var video = document.getElementById('video');
+        video.src = "videos/" + expertiseName + ".mp4";
+        video.play();
+
+        //$('#videoSrc').attr("src", "videos/" + expertiseName + ".mp4");
         $('#title').text(expertise.title);
         $('#description').html(expertise.message);
         $('#tags').text(tags);
