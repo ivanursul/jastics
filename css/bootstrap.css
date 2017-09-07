@@ -7396,6 +7396,12 @@ body {
   font-size: 25px;
 }
 
+.btn-hire-menu {
+  margin-top: 9px;
+  background-color: #272A47;
+  color: white;
+}
+
 ::-webkit-input-placeholder {color:#d2d3d6;}
 ::-moz-placeholder          {color:#d2d3d6;}/* Firefox 19+ */
 :-moz-placeholder           {color:#d2d3d6;}/* Firefox 18- */
