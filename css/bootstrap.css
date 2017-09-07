@@ -7380,10 +7380,15 @@ body {
 }
 
 .hire-us-font {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .hire-note {
+  font-size: 18px;
+  color: #90919a;
+}
+
+.hire-note-final {
   font-size: 18px;
   margin-top: 20px;
   color: #90919a;
@@ -7393,7 +7398,7 @@ body {
   color: white;
   background-color: #47B2F4;
   padding: 3px 15px 3px 15px;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .btn-hire-menu {

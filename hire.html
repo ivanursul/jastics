@@ -22,21 +22,28 @@
               </div>
 
               <div class="centering hire-us-element hire-us-font">
-                Please give us some information about yourself and your project. We will get back to you within 24 hours.
+                It's critical for us to know a broad strokes about the work you want us to do for you.
+                Write them and we will contact you within 24 hours.
               </div>
-              <div class="centering text-center hire-us-element hire-us-font">
+              <div class="hire-us-element hire-us-font">
                 <textarea name="description" class="hire-us-textarea" rows="7"
-                placeholder="Give us more insights about the project"
+                placeholder="Only basic things: project description, existing/new project, language"
                 onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Give us more insights about the project'" ></textarea>
+                onblur="this.placeholder = 'Only basic things: project description, from the scratch/existing project, language'" ></textarea>
               </div>
 
-              <div class="centering text-center hire-us-element hire-us-font">
-                <input name="contact" type="text" class="hire-us-textarea" placeholder="What is the best way to contact you?"></input>
+              <div class="centering hire-us-element hire-us-font">
+                <input name="contact" type="text" class="hire-us-textarea" placeholder="How should we contact you?"></input>
+                <div class="hire-note">
+                  * Please type your phone or email
+                </div>
               </div>
+
               <input type="hidden" name="_next" value="https://jastics.com" />
+              <input type="hidden" name="_subject" value="New Request" />
+
               <button type="submit" class="btn btn-hire">Submit</button>
-              <div class="centering hire-note">
+              <div class="centering hire-note-final">
                 * This request is submitted using formspee.io
               </div>
             </form>
