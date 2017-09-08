@@ -7371,6 +7371,10 @@ Using BEM SuitCSS variant, see: https://github.com/suitcss/suit/blob/master/doc/
     max-width:100%;
 }
 
+.hire-us-textarea:focus {
+  border: none;
+}
+
 .hire-us-element {
   margin-bottom: 30px;
 }
