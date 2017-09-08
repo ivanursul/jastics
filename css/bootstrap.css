@@ -7369,10 +7369,12 @@ Using BEM SuitCSS variant, see: https://github.com/suitcss/suit/blob/master/doc/
     font-size: 20px;
     width:100%;
     max-width:100%;
-}
 
-.hire-us-textarea:focus {
-  border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .hire-us-element {
