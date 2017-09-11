@@ -7416,9 +7416,11 @@ Using BEM SuitCSS variant, see: https://github.com/suitcss/suit/blob/master/doc/
 :-moz-placeholder           {color:#d2d3d6;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#d2d3d6;}
 
+footer {
+  background-color: #272A47;
+  min-height:350px;
+}
 
-
-footer { background-color: #47B2F4; min-height:350px; }
 .footerleft { margin-top:50px; padding:0 36px; }
 .logofooter { margin-bottom:10px; font-size:22px; color:#fff; font-weight:700;}
 
