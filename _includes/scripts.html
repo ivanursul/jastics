@@ -15,3 +15,7 @@
 {% if page.title == 'Expertise' %}
     {% include expertise_script.html %}
 {% endif %}
+
+{% if page.layout == 'post' or page.type == 'post-summaries' %}
+    <script id="dsq-count-scr" src="//{{ site.disqus.shortname }}.disqus.com/count.js" async></script>
+{% endif %}

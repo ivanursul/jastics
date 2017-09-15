@@ -14,6 +14,15 @@
                 <time datetime="{{ summary.date | date: '%Y/%m/%d' }}">
                     {{ summary.date | date_to_string }}
                 </time>
+                &nbsp;•&nbsp;
+                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                <a
+                  class="comments-count"
+                  href="{{ summary.url | relative_url }}#disqus_thread"
+                  data-disqus-identifier='{{ summary.url | absolute_url }}'
+                >
+                  Comments
+                </a>
             </div>
         {% endif %}
 

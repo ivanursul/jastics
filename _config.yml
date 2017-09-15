@@ -24,13 +24,27 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "/jastics-jekyll" # the subpath of your site, e.g. /blog
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://chalatz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-twitter_username: jekyllrb
-github_username:  jekyll
+repository: 'chalatz/jastics-jekyll'
 
-paginate: 2
+github: [metadata]
+
+linkedin_url: https://www.linkedin.com/
+twitter_url: https://twitter.com/
+upwork_url:  https://www.upwork.com
+instagram_url: https://www.instagram.com/
+
+paginate: 5
 paginate_path: "/blog/page/:num/"
+
+disqus:
+  comments: true
+  shortname: chalatz-jastics
+
+google_analytics:
+  enabled: false
+  tracking_code: UA-12345
 
 collections:
   whitepapers:
@@ -42,6 +56,9 @@ defaults:
       type: whitepapers
     values:
       layout: whitepaper
+
+sass:
+  style: compressed
 
 # Build settings
 markdown: kramdown

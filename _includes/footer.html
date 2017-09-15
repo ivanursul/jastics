@@ -1,36 +1,39 @@
 <footer class="site-footer navbar navbar-footer">
     <div class="container">
         <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 text-center">
+                <div class="footer-main">GET IN TOUCH</div>
+                <div class="footer-sub">
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </div>
+                <div class="footer-icons">
+                    <a class="footer-icon-link" href="{{ site.linkedin_url }}" title="Linkedin">
+                        <svg class="footer-icon">
+                            <title>Linkedin</title>
+                            <use xlink:href="#icon-linkedin" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.upwork_url }}" title="Upwork">
+                        <svg class="footer-icon">
+                            <title>Upwork</title>
+                            <use xlink:href="#icon-upwork" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.twitter_url }}" title="Twitter">
+                        <svg class="footer-icon">
+                            <title>Twitter</title>
+                            <use xlink:href="#icon-twitter" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.instagram_url }}" title="Instagram">
+                        <svg class="footer-icon">
+                            <title>Instagram</title>
+                            <use xlink:href="#icon-instagram" />
+                        </svg>
+                    </a>
 
-            <div class="col-md-4 col-sm-6 footerleft">
-                <div class="logofooter">{{ site.title }}</div>
-                <p><i class="fa fa-envelope" style="color:white;"></i> E-mail : {{ site.email }}</p>
-            </div>
-
-            <div class="col-md-6 col-sm-6 paddingtop-bottom">
-                <div class="logofooter">Latest posts</div>
-                <div class="post">
-                <p>How we wrote chicken eggs counter</p>
                 </div>
             </div>
-
-            <div class="col-md-2 col-sm-6 paddingtop-bottom">
-                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                <div class="fb-xfbml-parse-ignore">
-                    <blockquote cite="https://www.facebook.com/facebook">
-                    <a href="https://www.facebook.com/facebook">Facebook</a>
-                    </blockquote>
-                </div>
-                </div>
-                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                    <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/facebook">
-                        <a href="https://www.facebook.com/facebook">Twitter</a>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </footer>
