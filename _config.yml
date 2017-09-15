@@ -26,7 +26,7 @@ baseurl: "/"
 
 url: "https://jastics.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-repository: 'chalatz/jastics-jekyll'
+repository: 'ivanursul/jastics'
 
 github: [metadata]
 
