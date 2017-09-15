@@ -1,0 +1,26 @@
+<article class="post">
+    
+    <header class="article-header">
+
+        <h2 class="post-summary-title">
+            <a href="{{ summary.url | relative_url }}">
+                {{ summary.title }}
+            </a>
+        </h2>
+
+        {% if include.article_type == 'post' %}
+            <div class="post-meta">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <time datetime="{{ summary.date | date: '%Y/%m/%d' }}">
+                    {{ summary.date | date_to_string }}
+                </time>
+            </div>
+        {% endif %}
+
+    </header>
+
+    <div class="post-content">
+        {{ summary.content | markdownify | strip_html | truncatewords: 50 }}
+    </div>
+
+</article>

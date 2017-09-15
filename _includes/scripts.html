@@ -1,0 +1,17 @@
+<script src="{{ '/assets/js/jquery-1.10.2.min.js' | relative_url }}"></script>
+{% if page.layout == 'post' or page.layout == 'whitepaper' %}
+    <script src="{{ '/assets/js/anchor.min.js' | relative_url }}"></script>
+    <script>
+        anchors.options = {
+            placement: 'left',
+            visible: 'always'            
+        };
+        anchors.add();
+    </script>
+{% endif %}
+<script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+
+{% if page.title == 'Expertise' %}
+    {% include expertise_script.html %}
+{% endif %}

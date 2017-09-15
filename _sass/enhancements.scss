@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    line-height: 1.1;
+    color: $darkblue;
+}
+
+.btn-hire-menu {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.btn-hire {
+    &:hover {
+        transition: background-color .5s ease-in;
+        -webkit-transition: background-color .2s linear;
+        background-color: darken(#47B2F4, 15%);
+    }
+}
+
+.site-footer {
+    box-shadow: 0 999em 0 999em $footer-bg;
+    -webkit-box-shadow: 0 999em 0 999em $footer-bg;
+}

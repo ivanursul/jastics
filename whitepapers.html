@@ -1,0 +1,17 @@
+---
+layout: generic
+title: Whitepapers
+permalink: /whitepapers/
+---
+
+<h1 style="text-align: center; margin-top: 1em;">{{ page.title }}</h1>
+
+<section class="posts">
+  
+    {% for summary in site.whitepapers %}
+
+        {% include article_summary.html article_type='whitepaper' %}
+
+    {% endfor %}
+
+</section>

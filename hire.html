@@ -1,58 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+---
+layout: default
+title: Hire Us
+---
 
-    <title>Jastics Labs</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="css/custom.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-          <div class="center-row-fluid">
-            <form action="https://formspree.io/me@ivanursul.com" method="POST">
-              <div class="centering text-center hire-us-element">
-                <a href="/">
-                  <img src="images/HQ.png" class="main-logo" alt="Jastics logo">
-                </a>
-              </div>
+<div class="row competence">
 
-              <div class="centering hire-us-element hire-us-font">
-                It's critical for us to know a broad strokes about the work you want us to do for you.
-                Write them and we will contact you within 24 hours.
-              </div>
-              <div class="hire-us-element hire-us-font">
-                <textarea name="description" class="hire-us-textarea" rows="7"
-                placeholder="Only basic things: project description, existing/new project, language"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Only basic things: project description, from the scratch/existing project, language'" ></textarea>
-              </div>
+    <div class="col-lg-2"></div>
 
-              <div class="centering hire-us-element hire-us-font">
-                <input name="contact" type="text" class="hire-us-textarea" placeholder="How should we contact you?"></input>
-                <div class="hire-note">
-                  * Please type your phone or email
-                </div>
-              </div>
+    <div class="col-lg-8">
 
-              <input type="hidden" name="_next" value="https://jastics.com/index" />
-              <input type="hidden" name="_subject" value="New Request" />
+        <div class="center-row-fluid">
 
-              <button type="submit" class="btn btn-hire">Submit</button>
-              <div class="centering hire-note-final">
-                * This request is submitted using formspee.io
-              </div>
-            </form>
-          </div>
+            {% include hire-form.html %}
+
         </div>
-        <div class="col-lg-2"></div>
-      </div>
+
     </div>
-  </body>
-</html>
+
+    <div class="col-lg-2"></div>
+
+</div>

@@ -1,0 +1,26 @@
+<div class="modal fade fullscreen" id="menuModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="color:#272A47;">
+            <div class="modal-header" style="border:0;">
+                <a href="{{ '/' | relative_url }}" class="modal-brand">{{ site.title | upcase }}</a>
+                <button type="button" class="btn btn-link close" data-dismiss="modal" aria-hidden="true">
+                    <i class="fa fa-close fa-lg default-color"></i>
+                </button>
+                <h4 class="modal-title text-center"><span class="sr-only">main navigation</span></h4>
+            </div>
+            <div class="modal-body text-center">
+                <ul style="list-style-type:none;">
+                    <li><a href="{{ '/' | relative_url }}" class="big"><u>Home</u></a></li>
+                    {% for item in site.data.menu.items %}
+                        <li>
+                            <a href="{{ item.url | relative_url }}" class="big">
+                                {{ item.title }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                    <li><a href="{{ 'hire' | relative_url }}" class="big">Hire Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>  
