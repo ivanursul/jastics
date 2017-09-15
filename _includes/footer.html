@@ -1,0 +1,43 @@
+<footer class="site-footer navbar navbar-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 text-center">
+                <div class="footer-main">GET IN TOUCH</div>
+                <div class="footer-sub">
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </div>
+                <div class="footer-icons">
+                    <a class="footer-icon-link" href="{{ site.linkedin_url }}" title="Linkedin">
+                        <svg class="footer-icon">
+                            <title>Linkedin</title>
+                            <use xlink:href="#icon-linkedin" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.upwork_url }}" title="Upwork">
+                        <svg class="footer-icon">
+                            <title>Upwork</title>
+                            <use xlink:href="#icon-upwork" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.twitter_url }}" title="Twitter">
+                        <svg class="footer-icon">
+                            <title>Twitter</title>
+                            <use xlink:href="#icon-twitter" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.instagram_url }}" title="Instagram">
+                        <svg class="footer-icon">
+                            <title>Instagram</title>
+                            <use xlink:href="#icon-instagram" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% include scripts.html %}
+
+{% include menu_modal.html %}

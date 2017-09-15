@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include svgs.html %}
+
+    {% include header.html %}
+
+    <main class="container" aria-label="Content">
+
+        <article class="post">
+
+            <header class="article-header">
+
+                <h1 class="post-title">
+                    {{ page.title | escape }}
+                </h1>
+
+                <div class="post-meta">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <time datetime="{{ page.date | date: '%Y/%m/%d' }}">
+                        {{ page.date | date_to_string }}
+                    </time>
+                    &nbsp;•&nbsp;
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    <a
+                      class="comments-count"
+                      href="{{ page.url | relative_url }}#disqus_thread"
+                      data-disqus-identifier='{{ page.url | absolute_url }}'
+                    >
+                      Comments
+                    </a>
+                </div>
+
+            </header>
+
+            <div class="post-content">
+                {{ content }}
+            </div>
+
+            {% include posts-nav.html %}
+
+            {% if site.disqus.comments %}
+                {% include comments.html %}
+            {% endif %}
+
+        </article>
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

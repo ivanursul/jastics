@@ -1,0 +1,8 @@
+<nav class="posts-nav row">
+    {% if page.next %}
+        <a href="{{page.next.url | relative_url }}" title="{{page.next.title}}" class="go-to left-post">&larr; prev</a>
+    {% endif %}      
+    {% if page.previous %}
+        <a href="{{page.previous.url | relative_url }}" title="{{page.previous.title}}" class="go-to right-post">next &rarr;</a>
+    {% endif %}
+</nav>

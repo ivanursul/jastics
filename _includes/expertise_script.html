@@ -1,0 +1,82 @@
+<script type="text/javascript">
+    var data = {
+      "cloud_solutions": {
+        "title": "Cloud Solutions",
+        "message": "<p>We live in a world, where nowadays machines cost less than human work. Without a doubt, you can rent a machine from any cloud provider and host your software within a minutes. Comparing to the classical physical servers approach, does it saves your money and time in the same way? At Jastics Labs, we collected our best knowledge to deliver the best experience for you.</p><p>We can help you move your legacy application to the cloud, wrap it into a bunch of monitor tools and help you know what's going on with your software 24/7</p>",
+        tags: [
+          "Amazon", "DigitalOcean", "Azure"
+        ],
+        "next": "serverless"
+      },
+      "serverless": {
+        "title": "Serverless",
+        "message": "<p>For more and more cases Serverless approach is becoming a common way of writing software. It helps to reduce IT operational costs and deploy services faster, allowing to pay on demand. </p><p><b>Jastics Labs</b> gained experience with serverless approach and is ready to implement it for you.</p>",
+        tags: [
+          "Lambda", "CloudFunctions", "AzureFunctions"
+        ],
+        "next": "highload"
+      },
+      "highload": {
+        "title": "High Load",
+        "message": "<p>Over the past decade internet grew up from a slow and unreliable to fast and resilient. The more internet grow - the more there is a need to write systems, that can survive under a high load, making performance, efficiency, scalability and resilience as a first class citizents in your systems.</p><p>Do you have a specific requirements on perfomance for you application? Write us a short letter with problem and let's discuss it</p>",
+        tags: [
+          "Performance", "Scalability"
+        ],
+        "next": "uiux"
+      },
+      "uiux": {
+        "title": "UI/UX ",
+        "message": "<p>Jastics Labs is a team, which has years of experience in developing various backend systems. However, along with backend system with a lot of underground work we often deliver frontend part as well.</p><p>It's always a fun to switch from databases, services and other backend things to a world of html, css and javascript.</p>",
+        tags: [
+          "Frontend", "JS"
+        ],
+        "next": "cloud_solutions"
+      },
+    };
+
+    var manual = false;
+
+    function showExpertiseOnClick(expertiseName) {
+      manual = true;
+      showExpertise(expertiseName);
+    }
+
+    function showExpertise(expertiseName) {
+      console.log("Animation: " + expertiseName);
+
+      var currentExpertiseName = $('#title').attr("expertise-name");
+      $('#' + currentExpertiseName).css("text-decoration", "none");
+
+      $('#video').show();
+
+      var expertise = data[expertiseName];
+      var tags = expertise.tags.map(function(tag) { return "#" + tag }).join("  ");
+
+      var video = document.getElementById('video');
+      video.src = "{{ site.baseurl }}/assets/videos/" + expertiseName + ".mp4";
+      video.play();
+
+      //$('#videoSrc').attr("src", "videos/" + expertiseName + ".mp4");
+      $('#title').text(expertise.title);
+      $('#description').html(expertise.message);
+      $('#tags').text(tags);
+
+      $("#" + expertiseName).css("text-decoration", "underline");
+
+      $('#title').attr("expertise-name", expertiseName);
+    }
+
+    function changeExpertise() {
+      var expertiseName = $('#title').attr("expertise-name");
+      console.log("Scheduled task: " + data[expertiseName].title);
+      if (!manual) {
+        showExpertise(data[expertiseName].next);
+      }
+    }
+
+    setInterval(changeExpertise, 20000);
+    var expertiseName = Object.keys(data)[0];
+
+    showExpertise(expertiseName);
+    
+</script>

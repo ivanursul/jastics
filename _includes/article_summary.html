@@ -1,0 +1,35 @@
+<article class="post">
+    
+    <header class="article-header">
+
+        <h2 class="post-summary-title">
+            <a href="{{ summary.url | relative_url }}">
+                {{ summary.title }}
+            </a>
+        </h2>
+
+        {% if include.article_type == 'post' %}
+            <div class="post-meta">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <time datetime="{{ summary.date | date: '%Y/%m/%d' }}">
+                    {{ summary.date | date_to_string }}
+                </time>
+                &nbsp;•&nbsp;
+                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                <a
+                  class="comments-count"
+                  href="{{ summary.url | relative_url }}#disqus_thread"
+                  data-disqus-identifier='{{ summary.url | absolute_url }}'
+                >
+                  Comments
+                </a>
+            </div>
+        {% endif %}
+
+    </header>
+
+    <div class="post-content">
+        {{ summary.content | markdownify | strip_html | truncatewords: 50 }}
+    </div>
+
+</article>
