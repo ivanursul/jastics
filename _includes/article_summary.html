@@ -29,7 +29,20 @@
     </header>
 
     <div class="post-content">
-        {{ summary.content | markdownify | strip_html | truncatewords: 50 }}
+        
+        {% if summary.summary_img_path %}
+            
+            {% assign summary_img_relative_path = '/assets/images/' | append: summary.summary_img_path %}
+
+            <p>
+                <img src="{{ summary_img_relative_path | relative_url }}" alt="{{ summary.summary_img_alt_text }}">
+            </p>
+
+        {% endif %}
+        
+        <p>
+            {{ summary.content | markdownify | strip_html | truncatewords: 50 }}
+        </p>
     </div>
 
 </article>
