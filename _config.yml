@@ -40,7 +40,7 @@ paginate_path: "/blog/page/:num/"
 
 disqus:
   comments: true
-  shortname: chalatz-jastics
+  shortname: https-jastics-com
 
 google_analytics:
   enabled: false
