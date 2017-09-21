@@ -30,10 +30,10 @@ repository: 'ivanursul/jastics'
 
 github: [metadata]
 
-linkedin_url: https://www.linkedin.com/
-twitter_url: https://twitter.com/
-upwork_url:  https://www.upwork.com
-instagram_url: https://www.instagram.com/
+linkedin_url: https://www.linkedin.com/company/11286826/
+twitter_url: https://twitter.com/jastics
+upwork_url:  https://www.upwork.com/agencies/~013609ed8111b7920c
+instagram_url: https://www.instagram.com/jasticslabs/
 
 paginate: 5
 paginate_path: "/blog/page/:num/"
