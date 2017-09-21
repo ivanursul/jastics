@@ -44,7 +44,7 @@ disqus:
 
 google_analytics:
   enabled: false
-  tracking_code: UA-12345
+  tracking_code: UA-106871498-1
 
 collections:
   whitepapers:
