@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="center-container-fluid">
+    <svg id="svg"></svg>
     <div class="center-row-fluid">
         <div class="span3 centering text-center">
             <img src="{{ '/assets/images/HQ.png' | relative_url }}" class="main-logo" alt="Jastics logo">
@@ -15,7 +16,7 @@ layout: default
     </div>
 </div>
 <script>
-  var s = Snap("#main");
+  var s = Snap("#svg");
   console.log(s);
   var bigCircle = s.circle(400, 400, 100);
 </script>
