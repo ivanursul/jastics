@@ -11,19 +11,6 @@ layout: default
                 data experts & thinkers, who craft </br>
                 digital experience
             </div>
-            <svg id="svg"></svg>
         </div>
     </div>
 </div>
-<script>
-  var s = Snap("#svg");
-  console.log(s);
-  var bigCircle = s.circle(50, 50, 30);
-  bigCircle.attr({
-    fill: "#009933"
-  });
-  
-  bigCircle.animate({ry:1}, 220, function(){
-    bigCircle.animate({ry: 90}, 300);
-  });
-</script>
