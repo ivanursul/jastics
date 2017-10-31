@@ -2,7 +2,7 @@ body {
     padding-top: 50px
 }
 
-body>.navbar {
+body>.navbar { 
     -webkit-transition: background-color .3s ease-in;
     transition: background-color .3s ease-in
 }
@@ -264,4 +264,30 @@ footer p {
 
 .footer-icons {
     margin-bottom: 20px;
+}
+
+.navbar__item {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    list-style: none;
+    padding-left: 15px;
+    margin-top: -14px;
+    display: none;
+    background-color: #fff;
+}
+
+.submenu__item {
+    padding: 6px 0;
+}
+
+.submenu__link {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    &:hover {
+        text-decoration: none;
+        color: $lightblue;
+    }
 }

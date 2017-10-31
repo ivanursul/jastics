@@ -3,11 +3,14 @@ items:
 - title: Expertise
   url: expertise
 
-- title: FAQ
-  url: faq
+- title: Resources
+  url: '#'
+  subitems:
+    - title: FAQ
+      url: faq
 
-- title: Blog
-  url: blog
+    - title: Blog
+      url: blog
 
-- title: Whitepapers
-  url: whitepapers
+    - title: Whitepapers
+      url: whitepapers

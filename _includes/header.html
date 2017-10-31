@@ -16,10 +16,22 @@
                 
                 {% for item in site.data.menu.items %}
                     {% assign page_url = page.url | remove: '/' | remove: '.html' %}
-                    <li {% if item.url == page_url %} class="active" {% endif %}>
-                        <a href="{{ item.url | relative_url }}">
+                    {% assign sub_items_size = item.subitems | size %}
+                    <li class="navbar__item {% if item.url == page_url %}active{% endif %}{% if sub_items_size > 0 %}navbar__item--parent{% endif %}">
+                        <a class="navbar__link {% if sub_items_size > 0 %}navbar__link--parent{% endif %}" href="{{ item.url | relative_url }}">
                             {{ item.title }}
                         </a>
+                        {% if sub_items_size > 0 %}
+                            <ul class="submenu">
+                                {% for subitem in item.subitems %}
+                                    <li class="submenu__item">
+                                        <a class="submenu__link" href="{{ subitem.url | relative_url }}">
+                                            {{ subitem.title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
                     </li>
                 {% endfor %}
 
