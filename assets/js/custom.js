@@ -59,4 +59,20 @@
     return lines;
   }
 
+  var hover_menu = function(){
+
+    var nav_item =  $('.navbar__item--parent'),
+        submenu = nav_item.children('.submenu');
+
+        nav_item.mouseenter(function(){
+          submenu.fadeIn();
+        })
+        .mouseleave(function(){
+          submenu.fadeOut('fast');
+        });
+
+  };
+
+  hover_menu();
+
 })();
