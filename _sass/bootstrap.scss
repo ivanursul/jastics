@@ -4517,11 +4517,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #ffffff;
-  border-color: #eeeeee;
 }
 .navbar-default .navbar-brand {
   color: #272A47;
-  font-size: 20px;
+  font-size: 22px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -6777,8 +6776,9 @@ button.close {
   }
 }
 .navbar {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Raleway";
+  text-transform: uppercase;
 }
 .navbar-default .badge {
   background-color: #000;
@@ -7410,8 +7410,8 @@ Using BEM SuitCSS variant, see: https://github.com/suitcss/suit/blob/master/doc/
   margin-top: 10px;
   background-color: #272A47;
   color: white;
-  font-size: 20px;
-  padding: 5px 10px 5px 10px;
+  font-size: 18px;
+  padding: 2px 5px 2px 5px;
 }
 
 ::-webkit-input-placeholder {color:#d2d3d6;}

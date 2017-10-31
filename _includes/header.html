@@ -2,6 +2,10 @@
     <div class="container">
 
         <div class="navbar-header">
+          <img src="https://jastics.com/assets/images/icon.png" width="12%" height="12%" style="
+            float: left;
+            margin-top: 17px;
+            margin-right: 8px;">
             <a href="{{ '/' | relative_url }}" class="navbar-brand">{{ site.title }}</a>
             <button type="button" class="btn btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal">
                 <span class="icon-bar"></span>
@@ -10,10 +14,10 @@
             </button>
         </div>
 
-        <div class="navbar-collapse collapse" id="navbar-main">            
-        
+        <div class="navbar-collapse collapse" id="navbar-main">
+
             <ul class="nav navbar-nav">
-                
+
                 {% for item in site.data.menu.items %}
                     {% assign page_url = page.url | remove: '/' | remove: '.html' %}
                     {% assign sub_items_size = item.subitems | size %}
