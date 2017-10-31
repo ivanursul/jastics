@@ -291,3 +291,19 @@ footer p {
         color: $lightblue;
     }
 }
+
+#menuModal {
+    li {
+        margin-bottom: .8em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        font-size: 1.8em;
+        &:hover {
+            color: $lightblue;
+            text-decoration: none;
+        }
+    }
+}
