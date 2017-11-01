@@ -1088,7 +1088,7 @@ html {
 body {
   font-family: "Raleway";
   line-height: 1.42857143;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #ffffff;
 }
 input,
@@ -1290,7 +1290,7 @@ h6,
 }
 p {
   margin: 0 0 10.5px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .lead {
   margin-bottom: 21px;
@@ -4284,7 +4284,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 19.5px 15px;
+  padding: 18.3px 15px;
   font-size: 19px;
   line-height: 21px;
   height: 60px;
@@ -4520,7 +4520,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand {
   color: #272A47;
-  font-size: 22px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -6790,7 +6789,6 @@ button.close {
 }
 .navbar-brand {
   font-size: inherit;
-  font-weight: 700;
   text-transform: uppercase;
 }
 .has-warning .help-block,
@@ -6928,7 +6926,7 @@ a.mail {
 
 .competence-tag {
     color: #000000;
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px;
 }
 
@@ -6976,12 +6974,12 @@ a.mail {
 }
 
 .faq-question {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .faq-answer {
   padding-top: 12px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .team-subheader {
@@ -7036,7 +7034,7 @@ img.center {
 }
 
 .expertise-title {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .expertise_description {
@@ -7411,7 +7409,7 @@ Using BEM SuitCSS variant, see: https://github.com/suitcss/suit/blob/master/doc/
   background-color: #272A47;
   color: white;
   font-size: 18px;
-  padding: 2px 5px 2px 5px;
+  padding: 2px 8px 2px 8px;
 }
 
 ::-webkit-input-placeholder {color:#d2d3d6;}
