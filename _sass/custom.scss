@@ -326,3 +326,17 @@ footer p {
         }
     }
 }
+
+.invisible {
+    visibility: hidden;
+}
+
+.clients-slider-wrapper {
+    display: block;
+    max-width: 1170px;
+    margin: 2.5em auto;
+    a {
+        display: block;
+        overflow: hidden;
+    }
+}

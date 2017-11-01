@@ -1,4 +1,5 @@
 <script src="{{ '/assets/js/jquery-1.10.2.min.js' | relative_url }}"></script>
+
 {% if page.layout == 'post' or page.layout == 'whitepaper' %}
     <script src="{{ '/assets/js/anchor.min.js' | relative_url }}"></script>
     <script>
@@ -9,6 +10,25 @@
         anchors.add();
     </script>
 {% endif %}
+
+{% if page.layout == 'home' %}
+    <script type="text/javascript" src="{{ '/assets/js/slick.min.js' | relative_url }}"></script>
+    <script>
+        $(document).ready(function(){
+            $(".clients-slider").on('init', function () {
+                $(".clients-slider__item").removeClass('invisible');
+            }); 
+            $('.clients-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false
+            });
+        });
+    </script>
+{% endif %}
+
 <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
 
