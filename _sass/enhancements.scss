@@ -97,19 +97,3 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 28px;
   letter-spacing: 1px;
 }
-
-@media (min-width: 400px) {
-  .navbar-header {
-    margin-left: 10px;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-header {
-    margin-left: 20px;
-  }
-}
-@media (min-width: 1200px) {
-  .navbar-header {
-    margin-left: 40px;
-  }
-}
