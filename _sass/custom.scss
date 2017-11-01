@@ -270,6 +270,16 @@ footer p {
     position: relative;
 }
 
+.navbar__hire-us {
+    background-color: $darkblue;
+    color: #fff !important;
+     padding: 2px 8px 2px 8px !important;
+    &:hover {
+        text-decoration: underline !important;
+        background-color: $darkblue !important;
+    } 
+}
+
 .submenu {
     position: absolute;
     list-style: none;
