@@ -270,10 +270,17 @@ footer p {
     position: relative;
 }
 
-.navbar__hire-us {
+.navbar__hire-us-item {
+    padding: 4px 0;
+    margin-left: 2.5em;
+}
+
+.navbar__hire-us-link {
     background-color: $darkblue;
     color: #fff !important;
-     padding: 2px 8px 2px 8px !important;
+     padding: 6px 10px !important;
+     border-radius: 4px;
+     margin-top: 10px;
     &:hover {
         text-decoration: underline !important;
         background-color: $darkblue !important;

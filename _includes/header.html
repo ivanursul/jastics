@@ -14,7 +14,7 @@
 
         <div class="navbar-collapse collapse" id="navbar-main">
 
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
 
                 {% for item in site.data.menu.items %}
                     {% assign page_url = page.url | remove: '/' | remove: '.html' %}
@@ -37,8 +37,8 @@
                     </li>
                 {% endfor %}
 
-                <li>
-                    <a href="{{ 'hire' | relative_url }}" class="navbar__hire-us">
+                <li class="navbar__hire-us-item">
+                    <a href="{{ 'hire' | relative_url }}" class="navbar__hire-us-link">
                         Hire Us
                     </a>
                 </li>
