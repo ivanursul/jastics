@@ -19,8 +19,8 @@ email: info@jastics.com
 
 description: > # this means to ignore newlines until "baseurl:"
   Jastics Labs is a team of professional software engineers from Lviv, Ukraine.
-  Expertise: Backend development, High Load systems, Internet of things, Frontend development.
-  Languages: Java, Scala, JS. Let's work together!
+  Backend development, High Load systems, Internet of things, Frontend development.
+  Java, Scala, JS. Let's work together!
 
 baseurl: "/"
 
