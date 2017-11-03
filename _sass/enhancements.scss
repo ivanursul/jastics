@@ -97,7 +97,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   letter-spacing: 1px;
 }
 
-.home__logo {
+.home__banner {
     width: 100%;
     display: table-cell;
+}
+
+@media (max-width:768px) {
+    .home__banner {
+        position: relative;
+        top: 40px;
+    }
 }
