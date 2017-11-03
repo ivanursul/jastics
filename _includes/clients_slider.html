@@ -1,16 +1,13 @@
 <div class="clients-slider-wrapper">
-    <a href="">
+    <a href="{{ site.data.clients.href }}">
         <div class="clients-slider">
 
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>    
-            <div class="clients-slider__item invisible"><img src="http://via.placeholder.com/180/ffffff/666666?text=Jastics!" alt=""></div>    
+            {% for item in site.data.clients.items %}
+                <div class="clients-slider__item invisible">
+                    {% assign img_path = '/assets/images/' | append: item.src %}
+                    <img src="{{ img_path | relative_url }}" alt="{{ item.alt }}">
+                </div>            
+            {% endfor %}
 
         </div>
     </a>
