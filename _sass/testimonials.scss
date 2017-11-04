@@ -1,0 +1,47 @@
+.testimonials {
+    padding: 60px 0;
+}
+
+.testimonials-items {
+    padding: 0 20px;
+}
+
+.testimonials__heading {
+    margin-bottom: 70px;
+    font-size: 40px;
+}
+
+.testimonial__project-title {
+    color: $lightblue;
+    border-left: 6px solid $lightblue;
+    padding-left: 6px;
+    margin-bottom: 20px;
+}
+
+.testimonial__text {
+    text-transform: uppercase;
+    color: $darkblue;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.testimonial__author {
+    font-size: 14px;
+}
+
+.testimonial__more-button {
+    display: inline-block;
+    background-color: $darkblue;
+    color: #fff;
+    padding: 10px 38px;
+    margin: 40px 0;
+    letter-spacing: 1px;
+}
+
+.slick-next,
+.slick-prev {
+    color: $darkblue;
+    &:hover {
+        color: $lightblue;
+    }
+}

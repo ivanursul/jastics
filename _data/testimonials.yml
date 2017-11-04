@@ -1,0 +1,16 @@
+items:
+
+  - project_title: Project A
+    text: Lorem ipsum sit amet
+    author: A company
+    url: '#'
+
+  - project_title: Project B
+    text: Lorem ipsum sit amet
+    author: A company
+    url: '#'
+
+  - project_title: Project C
+    text: Lorem ipsum sit amet
+    author: A company
+    url: '#'
