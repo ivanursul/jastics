@@ -1,0 +1,39 @@
+.how-we-work-wrapper {
+    background-color: $darkblue;
+}
+
+.how-we-work {
+    padding: 60px 0;
+    color: #fff;
+}
+
+.how-we-work__heading,
+.how-we-work__section-heading {
+    color: #fff;
+}
+
+.how-we-work__heading {
+    margin-bottom: 70px;
+    font-size: 40px;
+}
+
+.how-we-work__section {
+    padding-left: 0 !important;
+}
+
+.how-we-work__section-type,
+.how-we-work__section-text {
+    font-size: 20px;
+}
+
+.how-we-work__section-heading {
+    margin: 36px 0 20px;
+}
+
+.how-we-work__section-type {
+    color: $lightblue;
+}
+
+.how-we-work__section-text {
+    line-height: 32px;
+}
