@@ -19,6 +19,18 @@
 
 .how-we-work__section {
     padding-left: 0 !important;
+    @media (max-width: 990px){
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $lightblue;
+        
+    }
+}
+
+.how-we-work__section--last {
+    margin-bottom: inherit;
+    padding-bottom: inherit;
+    border-bottom: none;
 }
 
 .how-we-work__section-type,

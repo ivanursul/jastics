@@ -19,11 +19,20 @@
                 $(".clients-slider__item").removeClass('invisible');
             }); 
             $('.clients-slider').slick({
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 1000,
                 arrows: false,
-                centerMode: true
+                centerMode: false,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
             });
 
             $('#how-we-work-goto').on('click', function(){
@@ -34,7 +43,15 @@
 
             $('.testimonials-items').slick({
                 nextArrow: '<i class="fa fa-chevron-right slick-next" aria-hidden="true"></i>',
-                prevArrow: '<i class="fa fa-chevron-left slick-prev" aria-hidden="true"></i>'
+                prevArrow: '<i class="fa fa-chevron-left slick-prev" aria-hidden="true"></i>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false
+                        }
+                    }
+                ]
             });
 
         });
