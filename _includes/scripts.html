@@ -25,6 +25,13 @@
                 arrows: false,
                 centerMode: true
             });
+
+            $('#how-we-work-goto').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: $("#how-we-work-wrapper").offset().top
+                }, 1000);
+            });
+
         });
     </script>
 {% endif %}
