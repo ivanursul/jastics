@@ -1,6 +1,6 @@
 <div class="clients-slider-wrapper">
     <a href="{{ site.data.clients.href }}">
-        <div class="clients-slider">
+        <div class="clients-slider" data-slick='{"slidesToShow": {{ site.data.clients.slidesToShow }}}'>
 
             {% for item in site.data.clients.items %}
                 <div class="clients-slider__item invisible">
