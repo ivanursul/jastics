@@ -3,7 +3,10 @@
 }
 
 .testimonials-items {
-    padding: 0 20px;
+    padding: 0 26px;
+    @media (max-width:768px) {
+        padding: 0;    
+    }
 }
 
 .testimonials__heading {
