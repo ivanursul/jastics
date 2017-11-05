@@ -40,6 +40,11 @@
                     scrollTop: $("#how-we-work-wrapper").offset().top
                 }, 1000);
             });
+            $('#testimonials-goto').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: $("#testimonials-wrapper").offset().top
+                }, 1000);
+            });
 
             $('.testimonials-items').slick({
                 nextArrow: '<i class="fa fa-chevron-right slick-next" aria-hidden="true"></i>',
@@ -48,7 +53,8 @@
                     {
                         breakpoint: 768,
                         settings: {
-                            arrows: false
+                            arrows: false,
+                            dots: true
                         }
                     }
                 ]

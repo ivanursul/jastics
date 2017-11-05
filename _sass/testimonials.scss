@@ -1,5 +1,6 @@
 .testimonials {
     padding: 60px 0;
+    height: 100vh;
 }
 
 .testimonials-items {
@@ -12,6 +13,15 @@
 .testimonials__heading {
     margin-bottom: 70px;
     font-size: 40px;
+}
+
+.testimonial {
+    &:hover {
+        cursor: grab;
+    }
+    &:active {
+        cursor: grabbing;
+    }
 }
 
 .testimonial__project-title {

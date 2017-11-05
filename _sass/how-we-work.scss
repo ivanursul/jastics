@@ -1,5 +1,7 @@
 .how-we-work-wrapper {
     background-color: $darkblue;
+    height: 100vh;
+    position: relative;
 }
 
 .how-we-work {
@@ -48,4 +50,41 @@
 
 .how-we-work__section-text {
     line-height: 32px;
+}
+
+.testimonials-goto__arrow {
+    font-size: 20px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.testimonials-goto {
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+
+    &:hover {
+        color: $lightblue;
+        .testimonials-goto__arrow {
+            -webkit-transform: translateY(4px);
+            -ms-transform: translateY(4px);
+                transform: translateY(4px);
+        }
+    }
 }
