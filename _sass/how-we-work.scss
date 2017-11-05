@@ -1,6 +1,6 @@
 .how-we-work-wrapper {
     background-color: $darkblue;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -27,12 +27,6 @@
         border-bottom: 1px solid $lightblue;
         
     }
-}
-
-.how-we-work__section--last {
-    margin-bottom: inherit;
-    padding-bottom: inherit;
-    border-bottom: none;
 }
 
 .how-we-work__section-type,
