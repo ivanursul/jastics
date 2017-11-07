@@ -20,7 +20,7 @@
 }
 
 .how-we-work__section {
-    padding-left: 0 !important;
+    //padding-left: 0 !important;
     @media (max-width: 990px){
         margin-bottom: 30px;
         padding-bottom: 20px;
@@ -55,6 +55,7 @@
 
 .testimonials-goto {
     position: absolute;
+    left: 0;
     bottom: 18px;
     width: 100%;
     font-size: 18px;
