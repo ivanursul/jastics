@@ -2,25 +2,27 @@
 
     <div class="container testimonials">
 
-        <div class="horizontal-darkblue-line"></div>
+        <div class="col-md-12">
+            <div class="horizontal-darkblue-line"></div>
+        </div>
         
-        <div class="row">
+        <div class="col-md-12">
             <h2 class="testimonials__heading">
                 Testimonials
             </h2>
         </div>
 
-        <div class="testimonials-items">
+        <div class="testimonials-items col-md-12">
             {% for item in site.data.testimonials.items %}
 
-                <div class="testimonial">
+                <div class="testimonial invisible">
 
                     <h3 class="testimonial__project-title">
                         {{ item.project_title }}
                     </h3>
 
                     <p class="testimonial__text">
-                        &ldquo;{{ item.text }}&rdquo;
+                        {{ item.text }}
                     </p>
 
                     <div class="testimonial__author">

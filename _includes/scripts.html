@@ -46,14 +46,19 @@
                 }, 1000);
             });
 
+            $(".testimonials-items").on('init', function () {
+                $(".testimonial").removeClass('invisible');
+            }); 
             $('.testimonials-items').slick({
                 nextArrow: '<i class="fa fa-chevron-right slick-next" aria-hidden="true"></i>',
                 prevArrow: '<i class="fa fa-chevron-left slick-prev" aria-hidden="true"></i>',
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2500,
                 responsive: [
                     {
                         breakpoint: 768,
-                        settings: {
-                            arrows: false,
+                        settings: {                            
                             dots: true
                         }
                     }

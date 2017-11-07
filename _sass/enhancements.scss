@@ -123,3 +123,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     height: 15px;
     width: 160px;
 }
+
+.slick-list,
+.slick-list:focus,
+.slick-list:active,
+.slick-slide, .slick-slide * {
+    outline: none !important;
+}
