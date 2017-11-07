@@ -1,5 +1,5 @@
 <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid main-menu">
 
         <div class="navbar-header">
             <a href="{{ '/' | relative_url }}" class="navbar-brand navbar-jastics">{{ site.title }}</a>
@@ -12,7 +12,7 @@
 
         <div class="navbar-collapse collapse" id="navbar-main">
 
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar--right">
 
                 {% for item in site.data.menu.items %}
                     {% assign page_url = page.url | remove: '/' | remove: '.html' %}

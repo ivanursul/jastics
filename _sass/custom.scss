@@ -272,7 +272,7 @@ footer p {
 
 .navbar__hire-us-item {
     padding: 4px 0;
-    margin-left: 2.5em;
+    margin-left: 15px;
 }
 
 .navbar__hire-us-link {
@@ -378,5 +378,20 @@ footer p {
             -ms-transform: translateY(4px);
                 transform: translateY(4px);
         }
+    }
+}
+
+.navbar--right {
+    float: right;
+}
+
+.main-menu {
+    padding: 0 5em;
+    max-width: 1900px;
+    @media (max-width: 990px) {
+        padding: 0 3em;
+    }
+    @media (max-width: 768px) {
+        padding: 0 1em;
     }
 }
