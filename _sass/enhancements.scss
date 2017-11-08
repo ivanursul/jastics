@@ -130,3 +130,29 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .slick-slide, .slick-slide * {
     outline: none !important;
 }
+
+.navbar-default {
+    position: relative;
+}
+
+.main-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.hide-navbar {
+    transform: translateY(-100%);
+}
+
+.show-navbar {
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    transform: translateY(0);
+}

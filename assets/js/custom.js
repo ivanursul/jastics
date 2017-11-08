@@ -75,4 +75,53 @@
 
   hover_menu();
 
+  var hide_menu = function(){
+
+    var navbar = $('#main-navbar'),
+        scroll_top = $(document).scrollTop();
+
+    $(window).scroll(function(){
+
+      //console.log($($(document).scrollTop()));
+
+      // if($(document).scrollTop() > 50){
+      //   navbar.removeClass('show-navbar').addClass('hide-navbar');
+      // }
+
+      // if($(document).scrollTop() == 0){
+      //   console.log('top!');
+      //   navbar.delay(3000).removeClass('hide-navbar').removeClass('show-navbar').addClass('show-navbar');
+      // }
+
+
+
+    });
+
+    $(document).on( "mousemove", function( event ) {
+
+      var pos = event.pageY - $(document).scrollTop(),
+      navbar = $('.main-menu');
+      console.log($(document).scrollTop());
+      if(pos < 50 && $(document).scrollTop() > 50){
+        navbar.addClass('fixed');
+      } else {
+        navbar.removeClass('fixed');
+      }
+      
+      //console.log(pos);
+
+    });
+
+    var el = $('.main-subheader');
+
+    el.on('click', function(){
+      
+      $('.navbar-default').clone().appendTo('body').addClass('navbar-fixed-top');
+
+    });
+
+  };
+
+  hide_menu();
+
 })();
