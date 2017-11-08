@@ -12,11 +12,17 @@
 }
 
 .testimonials__heading {
-    margin-bottom: 25px;
-    font-size: 40px;
+    margin-bottom: 23vh;
+    @media (max-width: 768px){
+        margin-bottom: 45px;
+    }
+    font-size: 48px;
+    letter-spacing: 1px;
 }
 
 .testimonial__project-title {
+    font-size: 32px;
+    line-height: 32px;
     color: $lightblue;
     border-left: 6px solid $lightblue;
     padding-left: 6px;

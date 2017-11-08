@@ -15,8 +15,12 @@
 }
 
 .how-we-work__heading {
-    margin-bottom: 45px;
-    font-size: 40px;
+    margin-bottom: 23vh;
+    @media (max-width: 768px){
+        margin-bottom: 45px;
+    }
+    font-size: 48px;
+    letter-spacing: 1px;
 }
 
 .how-we-work__section {
@@ -29,17 +33,18 @@
     }
 }
 
-.how-we-work__section-type,
 .how-we-work__section-text {
     font-size: 20px;
 }
 
 .how-we-work__section-heading {
+    font-size: 36px;
     margin: 36px 0 20px;
 }
 
 .how-we-work__section-type {
     color: $lightblue;
+    font-size: 26px;
 }
 
 .how-we-work__section-text {
