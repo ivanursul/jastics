@@ -81,14 +81,14 @@
 
     $(window).scroll(function(){
 
-      if($(document).scrollTop() > 50){
+      if( $(document).scrollTop() > 50 ){
         main_menu
           .removeClass('show-menu')
           .addClass('hide-menu')
           .addClass('menu-fixed');
       }
 
-      if($(document).scrollTop() == 0){
+      if( $(document).scrollTop() == 0 ){
 
         main_menu
           .delay(500)
