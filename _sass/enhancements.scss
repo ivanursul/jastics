@@ -4,6 +4,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: $darkblue;
 }
 
+.pushed-right {
+    margin-left: 15px;
+}
+
+.big-text {
+    font-size: 4em;
+}
+
+.text-lightblue {
+    color: $lightblue;
+}
+
+.text-darkblue {
+    color: $darkblue;
+}
+
 .center-container-fluid {
     table-layout: fixed;
 }
