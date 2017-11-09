@@ -135,37 +135,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     position: relative;
 }
 
-.main-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-}
+@media (min-width: 768px) {
 
-.menu-transition {
-    transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-}
+    .main-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
 
-.menu-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
+    .menu-transition {
+        transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+    }
+    
+    .menu-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    
+    .hide-menu {
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    
+    .show-menu {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    }
 
-.hide-menu {
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
-}
-
-.show-menu {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-        transform: translateY(0);
 }

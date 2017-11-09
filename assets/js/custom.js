@@ -75,13 +75,11 @@
 
   hover_menu();
 
-  var hide_menu = function(){
+  var handle_menu = function(){
 
     var main_menu = $('.main-menu');
 
     $(window).scroll(function(){
-
-      //console.log($($(document).scrollTop()));
 
       if($(document).scrollTop() > 50){
         main_menu
@@ -141,6 +139,6 @@
 
   };
 
-  hide_menu();
+  handle_menu();
 
 })();
