@@ -107,43 +107,35 @@
 
       }
 
-
-
     });
 
     $(document).on( "mousemove", function( event ) {
 
       var mouse_pos = event.pageY - $(document).scrollTop(),
-          main_menu = $('.main-menu');
+          main_menu = $('.main-menu'),
+          menu_height = $('.main_menu').height() || 50;
 
-      //console.log($(document).scrollTop());
-
-      //console.log(mouse_pos);
-
-      if($(document).scrollTop() > 50){
+      if($(document).scrollTop() > menu_height){
         // the window has scrolled down
-        if(mouse_pos < 50){
+        if( mouse_pos < menu_height ){
           // the mouse is near the top
           main_menu        
             .removeClass('hide-menu')
             .addClass('menu-transition')
             .addClass('show-menu');
-        } else {
-          // the mouse is NOT near the top
+        }
+        
+        if( $('.submenu').is(':visible') ){
+          menu_height += $('.submenu').height();
+        }
+
+        if( mouse_pos > menu_height ){
           main_menu
             .removeClass('show-menu')
             .addClass('hide-menu');
         }
 
       }
-
-    });
-
-    var el = $('.main-subheader');
-
-    el.on('click', function(){
-      
-      $('.navbar-default').clone().appendTo('body').addClass('navbar-fixed-top');
 
     });
 
