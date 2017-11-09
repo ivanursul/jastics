@@ -143,16 +143,29 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     z-index: 9999;
 }
 
-.fixed {
+.menu-transition {
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+}
+
+.menu-fixed {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
-.hide-navbar {
-    transform: translateY(-100%);
+.hide-menu {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
 }
 
-.show-navbar {
-    transition: all 1s linear;
-    -webkit-transition: all 1s linear;
-    transform: translateY(0);
+.show-menu {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+        transform: translateY(0);
 }

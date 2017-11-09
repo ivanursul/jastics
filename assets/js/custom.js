@@ -77,21 +77,35 @@
 
   var hide_menu = function(){
 
-    var navbar = $('#main-navbar'),
-        scroll_top = $(document).scrollTop();
+    var main_menu = $('.main-menu');
 
     $(window).scroll(function(){
 
       //console.log($($(document).scrollTop()));
 
-      // if($(document).scrollTop() > 50){
-      //   navbar.removeClass('show-navbar').addClass('hide-navbar');
-      // }
+      if($(document).scrollTop() > 50){
+        main_menu
+          .removeClass('show-menu')
+          .addClass('hide-menu')
+          .addClass('menu-fixed');
+      }
 
-      // if($(document).scrollTop() == 0){
-      //   console.log('top!');
-      //   navbar.delay(3000).removeClass('hide-navbar').removeClass('show-navbar').addClass('show-navbar');
-      // }
+      if($(document).scrollTop() == 0){
+
+        main_menu
+          .delay(500)
+          .removeClass('hide-menu')
+          .addClass('menu-transition')
+          .addClass('show-menu')
+          .removeClass('menu-fixed');
+
+          setTimeout(function () { 
+            main_menu            
+              .removeClass('menu-transition')
+              .removeClass('show-menu');
+          }, 700);      
+
+      }
 
 
 
@@ -99,16 +113,29 @@
 
     $(document).on( "mousemove", function( event ) {
 
-      var pos = event.pageY - $(document).scrollTop(),
-      navbar = $('.main-menu');
-      console.log($(document).scrollTop());
-      if(pos < 50 && $(document).scrollTop() > 50){
-        navbar.addClass('fixed');
-      } else {
-        navbar.removeClass('fixed');
+      var mouse_pos = event.pageY - $(document).scrollTop(),
+          main_menu = $('.main-menu');
+
+      //console.log($(document).scrollTop());
+
+      //console.log(mouse_pos);
+
+      if($(document).scrollTop() > 50){
+        // the window has scrolled down
+        if(mouse_pos < 50){
+          // the mouse is near the top
+          main_menu        
+            .removeClass('hide-menu')
+            .addClass('menu-transition')
+            .addClass('show-menu');
+        } else {
+          // the mouse is NOT near the top
+          main_menu
+            .removeClass('show-menu')
+            .addClass('hide-menu');
+        }
+
       }
-      
-      //console.log(pos);
 
     });
 
