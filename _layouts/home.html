@@ -7,13 +7,24 @@
 
     {% include svgs.html %}
 
-    {% include header.html %}
+    <div class="front-wrapper">
 
-    <main id="main" class="center-container-fluid" aria-label="Content">
+      {% include header.html %}
 
-      {% include home_banner.html %}
+      <main id="main" class="center-container-fluid" aria-label="Content">
 
-    </main>
+        {% include home_banner.html %}
+
+      </main>
+
+      <div id="how-we-work-goto" class="how-we-work-goto">
+          <div class="how-we-work-goto__text">
+              {{ site.data.clients.goto_text }}
+          </div>
+          <i class="fa fa-angle-down how-we-work-goto__arrow" aria-hidden="true"></i>        
+      </div>
+
+    </div>
 
     {% include how-we-work.html %}
     

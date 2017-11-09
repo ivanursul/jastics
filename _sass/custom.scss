@@ -35,6 +35,13 @@ body>.navbar {
     border-bottom: none
 }
 
+.front-wrapper {
+    position: relative;
+    display: table;
+    height: 100%;
+    vertical-align: middle;
+}
+
 .table-of-contents {
     margin-top: 1em
 }
@@ -355,7 +362,7 @@ footer p {
 .how-we-work-goto {
     position: absolute;
     left: 0;
-    bottom: 18px;
+    bottom: 6px;
     width: 100%;
     font-size: 18px;
 
@@ -387,6 +394,9 @@ footer p {
 
 .navbar-items {
     letter-spacing: 2px;
+    @media (max-width: 990px) {
+        font-size: 16px;
+    }
 }
 
 .main-menu {
@@ -394,7 +404,7 @@ footer p {
     max-width: 1900px;
     background-color: #fff;
     @media (max-width: 990px) {
-        padding: 0 23px;
+        padding: 0 20px;
     }
     @media (max-width: 768px) {
         padding: 0 14px;
