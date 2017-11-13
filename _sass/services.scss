@@ -9,7 +9,7 @@
 }
 
 .services__heading {
-    margin-bottom: 5vw; 
+    margin-bottom: 10vw; 
 }
 
 .services__items {
@@ -21,7 +21,7 @@
     width: 15%;
     float: left;
     margin-bottom: 3em;
-    margin-right: 4vw;
+    margin-right: 3.5vw;
     &:last-child {
         margin-right: 0;
     }
@@ -30,6 +30,11 @@
     }
     @media (max-width: 768px) {
         width: 40%;
+        min-height: 155px;
+    }
+    @media (max-width: 600px) {
+        width: 45%;
+        min-height: 150px;
     }
 }
 

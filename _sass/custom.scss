@@ -387,7 +387,7 @@ footer p {
         }
     }
 }
-.services__arrow {
+.services-goto__arrow {
     font-size: 20px;
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
@@ -415,7 +415,7 @@ footer p {
 
     &:hover {
         color: $lightblue;
-        .services__arrow {
+        .services-goto__arrow {
             -webkit-transform: translateY(4px);
             -ms-transform: translateY(4px);
                 transform: translateY(4px);
@@ -444,4 +444,10 @@ footer p {
     @media (max-width: 768px) {
         padding: 0 14px;
     }
+}
+
+.footer__copyright {
+    float: right;
+    margin-top: 30px;
+    color: #fff;
 }
