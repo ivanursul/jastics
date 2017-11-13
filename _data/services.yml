@@ -1,0 +1,17 @@
+items:
+
+- icon: program-coding/light-bulb.svg
+  text: Dedicated Development Team
+
+- icon: program-coding-linear/html.svg
+  text: Software Product Development
+
+- icon: program-coding/smartphone.svg
+  text: Mobile Application Development
+
+- icon: program-coding/browser-1.svg
+  text: Software QA & Testing
+
+- icon: programming/responsive.svg
+  text: Technical Support
+

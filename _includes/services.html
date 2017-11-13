@@ -12,6 +12,21 @@
             </h2>
         </div>
 
+        <div class="row services__items">
+            {% for item in site.data.services.items %}        
+                <div class="services__item">
+
+                    <div class="services__item-icon-wrapper">
+                        <img class="services__item-icon" src="{{ '/assets/icons/' | relative_url }}{{ item.icon }}" alt="{{ item.text }}">
+                    </div>
+                    <h4 class="services__item-title">
+                        {{ item.text }}
+                    </h4>
+
+                </div>
+            {% endfor %}
+        </div>
+
     </div>
 
 </div>
