@@ -310,10 +310,10 @@ footer p {
 }
 
 ::selection {
-  color: #47B2F4;
-  background: white;
+  background: #47B2F4; /* WebKit/Blink Browsers */
+  color: white;
 }
 ::-moz-selection {
-  color: #47B2F4;
-  background: white;
+  background: #47B2F4; /* Gecko Browsers */
+  color: white;
 }
