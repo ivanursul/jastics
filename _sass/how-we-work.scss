@@ -15,7 +15,7 @@
 }
 
 .how-we-work__heading {
-    margin-bottom: 23vh;
+    margin-bottom: 30vw;
     @media (max-width: 768px){
         margin-bottom: 45px;
         font-size: 38px;
@@ -29,8 +29,6 @@
     @media (max-width: 990px){
         margin-bottom: 30px;
         padding-bottom: 20px;
-        border-bottom: 1px solid $lightblue;
-        
     }
 }
 

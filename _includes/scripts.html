@@ -36,6 +36,11 @@
                 ]
             });
 
+            $('#services-goto').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: $("#services-wrapper").offset().top
+                }, 1000);
+            });
             $('#how-we-work-goto').on('click', function(){
                 $('html, body').animate({
                     scrollTop: $("#how-we-work-wrapper").offset().top
