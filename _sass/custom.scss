@@ -308,12 +308,3 @@ footer p {
         }
     }
 }
-
-::selection {
-  background: #47B2F4; /* WebKit/Blink Browsers */
-  color: white;
-}
-::-moz-selection {
-  background: #47B2F4; /* Gecko Browsers */
-  color: white;
-}
