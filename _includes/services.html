@@ -14,7 +14,7 @@
 
         <div class="row services__items">
             {% for item in site.data.services.items %}        
-                <div class="services__item">
+                <div class="services__item col-md-2 col-sm-4 col-xs-6">
 
                     <div class="services__item-icon-wrapper">
                         <img class="services__item-icon" src="{{ '/assets/icons/' | relative_url }}{{ item.icon }}" alt="{{ item.text }}">

@@ -9,32 +9,24 @@
 }
 
 .services__heading {
+    font-size: 48px;
     margin-bottom: 10vw; 
 }
 
 .services__items {
     margin-bottom: 65px;
+    @media (max-width: 600px) {
+        margin-bottom: 0;
+    }
 }
 
 .services__item {
     text-align: center;
-    width: 15%;
-    float: left;
     margin-bottom: 3em;
-    margin-right: 3.5vw;
-    &:last-child {
-        margin-right: 0;
-    }
-    @media (max-width: 990px) {
-        width: 25%;
-    }
-    @media (max-width: 768px) {
-        width: 40%;
-        min-height: 155px;
-    }
     @media (max-width: 600px) {
         width: 45%;
-        min-height: 150px;
+        min-height: 145px;
+        margin-bottom: 1em;
     }
 }
 
@@ -47,12 +39,12 @@
 }
 
 .services__item-icon {
-    width: 50%;
+    width: 45%;
     max-width: 100%;
     @media (max-width: 990px) {
         width: 40%;
     }
     @media (max-width: 768px) {
-        width: 35%;
+        width: 30%;
     }
 }
