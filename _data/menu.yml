@@ -9,9 +9,7 @@ items:
 - title: Resources
   url: '#'
   subitems:
-    - title: FAQ
-      url: faq
-
+    
     - title: Blog
       url: blog
 
