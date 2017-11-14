@@ -7,8 +7,8 @@ items:
  - src: "clients/pickme.png"
    alt: "PickMe (Sri Lanka)"
 
- - src: "clients/client.png"
-   alt: "Client description"
+ - src: "clients/hybrid.png"
+   alt: "Hybrid yazilim"
 
  - src: "clients/client.png"
    alt: "Client description"
