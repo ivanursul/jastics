@@ -5,7 +5,7 @@
         <div class="col-md-12">
             <div class="horizontal-darkblue-line"></div>
         </div>
-        
+
         <div class="col-md-12">
             <h2 class="testimonials__heading">
                 Testimonials
@@ -18,16 +18,12 @@
                 <div class="testimonial invisible">
 
                     <h3 class="testimonial__project-title">
-                        {{ item.project_title }}
+                        {{ item.author }}
                     </h3>
 
                     <p class="testimonial__text">
                         {{ item.text }}
                     </p>
-
-                    <div class="testimonial__author">
-                        - {{ item.author }}
-                    </div>
 
                     <a href="{{ item.url | relative_url }}" class="testimonial__more-button">
                         More About ...
