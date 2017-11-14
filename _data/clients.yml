@@ -12,3 +12,6 @@ items:
 
  - src: "clients/foodrazor.png"
    alt: "Foodrazor restaurant business"
+
+ - src: "clients/upwork.png"
+   alt: "Upwork"
