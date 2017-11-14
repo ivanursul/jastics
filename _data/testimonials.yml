@@ -3,7 +3,7 @@ goto_text: testimonials
 items:
 
   - project_title: Project A
-    text: Our growing business required urgent backend expertise to scale our existing tech stack. I was fortunate to find Jastics Labs, by coincident. Jastics Labs helped us put together Apache Kafka and helped us understand the best practices of using Kafka. The consulting assignment has worked well.
+    text: Our growing business required urgent backend expertise to scale our existing tech stack. Jastics Labs helped us put together Apache Kafka and helped us understand the best practices of using Kafka.
     author: PickMe
     url: 'pickme.lk'
 
