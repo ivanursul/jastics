@@ -11,7 +11,7 @@
             <div class="modal-body text-center">
                 <ul style="list-style-type:none;">
                     <li><a href="{{ '/' | relative_url }}" class="big"><u>Home</u></a></li>
-                    {% for item in site.data.menu.items %}
+                    {% for item in site.data.mobilemenu.items %}
                     {% assign sub_items_size = item.subitems | size %}
                         <li>
                             <a href="{{ item.url | relative_url }}" class="big">
