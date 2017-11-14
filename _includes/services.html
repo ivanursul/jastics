@@ -17,7 +17,9 @@
                 <div class="services__item col-md-2 col-sm-4 col-xs-6">
 
                     <div class="services__item-icon-wrapper">
-                        <img class="services__item-icon" src="{{ '/assets/icons/' | relative_url }}{{ item.icon }}" alt="{{ item.text }}">
+                        <svg class="services__item-icon icon-{{ item.icon }}">
+                            <use xlink:href="#icon-{{ item.icon }}"></use>
+                        </svg>
                     </div>
                     <h4 class="services__item-title">
                         {{ item.text }}

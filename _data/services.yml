@@ -2,20 +2,20 @@ goto_text: "what do we do?"
 
 items:
 
-- icon: dedicated-development-team.svg
+- icon: dedicated-development-team
   text: Dedicated Development Team
 
-- icon: software-product-development.svg
+- icon: software-product-development
   text: Software Product Development
 
-- icon: mobile-application-development.svg
+- icon: mobile-application-development
   text: Mobile Application Development
 
-- icon: software-qa-and-testing.svg
+- icon: software-qa-and-testing
   text: Software QA & Testing
 
-- icon: technical-consulting.svg
+- icon: technical-consulting
   text: Technical Consulting
 
-- icon: technical-support.svg
+- icon: technical-support
   text: Technical Support
