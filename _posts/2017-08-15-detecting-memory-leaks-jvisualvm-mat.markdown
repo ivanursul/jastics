@@ -3,8 +3,8 @@ layout: "post"
 title:  "Detecting memory leaks using JVisualVM and Memory Analyzer Tool"
 date: 2017-08-15 10:33:00
 permalink: memory-leak
-summary_img_path: "memory-leak/results.png"
-summary_img_alt_text: "Memory leak results"
+#summary_img_path: "memory-leak/results.png"
+#summary_img_alt_text: "Memory leak results"
 ---
 
 Few days ago I had a problem on one of the projects that I am working on, we had a memory leak. During the two days period our services crashed three times, so I  decided to investigate it. Everything which I'm going to talk about is not a rocket science, there's no clever and tricky tips, it's just a straighforward explanation how you can find memory leaks.
@@ -14,10 +14,10 @@ Few days ago I had a problem on one of the projects that I am working on, we had
 I had a problem on a production instance, so I started my services with JMX feature enabled. Just start your apps with following params:
 
 ```
-    -Djavax.management.builder.initial= 
-    -Dcom.sun.management.jmxremote 
-    -Dcom.sun.management.jmxremote.port=${whatever_port} 
-    -Dcom.sun.management.jmxremote.authenticate=false 
+    -Djavax.management.builder.initial=
+    -Dcom.sun.management.jmxremote
+    -Dcom.sun.management.jmxremote.port=${whatever_port}
+    -Dcom.sun.management.jmxremote.authenticate=false
     -Dcom.sun.management.jmxremote.ssl=false
 ```
 
@@ -54,5 +54,3 @@ You should get following screen:
 
 
 ![](assets/images/memory-leak/results.png){: .center-image }
-
-
