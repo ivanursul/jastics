@@ -291,7 +291,7 @@ footer p {
     &:hover {
         text-decoration: underline !important;
         background-color: $darkblue !important;
-    } 
+    }
 }
 
 .submenu {
@@ -450,4 +450,12 @@ footer p {
     float: right;
     margin-top: 30px;
     color: #fff;
+}
+
+.left-competence {
+  padding-left: 40px;
+}
+
+.right-competence {
+  padding-right: 40px;
 }
