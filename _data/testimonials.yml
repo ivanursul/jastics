@@ -5,12 +5,12 @@ items:
   - project_title: Kafka migration
     text: Our growing business required urgent backend expertise to scale our existing tech stack. Jastics Labs helped us put together Apache Kafka and helped us understand the best practices of using Kafka.
     author: PickMe
-    url: 'pickme.lk'
+    url: 'https://pickme.lk'
 
   - project_title: Chicken Egg Counter
     text: We are very pleased to work with Jastics Labs. Very professional and experienced team. Thank you Hybrid Software & Elektronics Co.
     author: Hybrid Software & Elektronics Co
-    url: '#'
+    url: 'http://www.hybridyazilim.com'
 
   - project_title: Project C
     text: Lorem ipsum sit amet
