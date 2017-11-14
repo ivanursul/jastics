@@ -4,11 +4,11 @@ goto_text: "how do we do it?"
 
 items:
 
- - src: "clients/pick-me.png"
+ - src: "clients/wb/pick-me.png"
    alt: "PickMe (Sri Lanka)"
 
- - src: "clients/hybr.png"
+ - src: "clients/wb/hybr.png"
    alt: "Hybrid yazilim"
 
- - src: "clients/foodrazor.png"
+ - src: "clients/wb/foodrazor.png"
    alt: "Foodrazor restaurant business"
