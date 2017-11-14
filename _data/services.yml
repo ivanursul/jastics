@@ -2,18 +2,20 @@ goto_text: "what do we do?"
 
 items:
 
-- icon: program-coding/light-bulb.svg
+- icon: dedicated-development-team.svg
   text: Dedicated Development Team
 
-- icon: program-coding-linear/html.svg
+- icon: software-product-development.svg
   text: Software Product Development
 
-- icon: program-coding/smartphone.svg
+- icon: mobile-application-development.svg
   text: Mobile Application Development
 
-- icon: program-coding/browser-1.svg
+- icon: software-qa-and-testing.svg
   text: Software QA & Testing
 
-- icon: programming/responsive.svg
-  text: Technical Support
+- icon: technical-consulting.svg
+  text: Technical Consulting
 
+- icon: technical-support.svg
+  text: Technical Support
