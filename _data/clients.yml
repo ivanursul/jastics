@@ -4,7 +4,7 @@ goto_text: "how do we do it?"
 
 items:
 
- - src: "clients/pickme.png"
+ - src: "clients/pickme-sr.png"
    alt: "PickMe (Sri Lanka)"
 
  - src: "clients/hybrid.png"
