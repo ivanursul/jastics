@@ -1,16 +1,41 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="center-container-fluid">
-    <div class="center-row-fluid">
-        <div class="span3 centering text-center">
-            <img src="{{ '/assets/images/HQ.png' | relative_url }}" class="main-logo" alt="Jastics logo">
-            <div class="main-subheader">
-                We're a team of software engineers, </br>
-                data experts & thinkers, who craft </br>
-                digital experience
-            </div>
-        </div>
+  {% include head.html %}
+
+  <body data-gr-c-s-loaded="true" style="">
+
+    {% include svgs.html %}
+
+    {% include services_icons.svg %}
+
+    <div class="front-wrapper">
+
+      {% include header.html %}
+
+      <main id="main" class="center-container-fluid home-main" aria-label="Content">
+
+        {% include home_banner.html %}
+
+      </main>
+
+      <div id="services-goto" class="services-goto">
+          <div class="services-goto__text">
+              {{ site.data.services.goto_text }}
+          </div>
+          <i class="fa fa-angle-down services-goto__arrow" aria-hidden="true"></i>        
+      </div>
+
     </div>
-</div>
+
+    {% include services.html %}
+    
+    {% include how-we-work.html %}
+    
+    {% include testimonials.html %}
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
