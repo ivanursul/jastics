@@ -15,9 +15,8 @@
 
   <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
 
-  {% assign timestamp = site.time | date: '%s%N' %}
-  {% assign main_css = '/assets/main.css?v=' | append: timestamp %}
-  <link rel="stylesheet" href="{{ main_css | relative_url }}">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css?v=9.0" | relative_url }}">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">

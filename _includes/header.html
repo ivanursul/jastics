@@ -1,7 +1,9 @@
-<div id="main-navbar" class="navbar navbar-default">
-    <div class="container-fluid main-menu">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
 
         <div class="navbar-header">
+
+            <img class="site-icon" src="{{ '/assets/images/icon.png' | relative_url }}">
             <a href="{{ '/' | relative_url }}" class="navbar-brand navbar-jastics">{{ site.title }}</a>
             <button type="button" class="btn btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal">
                 <span class="icon-bar"></span>
@@ -12,7 +14,7 @@
 
         <div class="navbar-collapse collapse" id="navbar-main">
 
-            <ul class="nav navbar-nav navbar-items navbar--right">
+            <ul class="nav navbar-nav">
 
                 {% for item in site.data.menu.items %}
                     {% assign page_url = page.url | remove: '/' | remove: '.html' %}
@@ -35,13 +37,13 @@
                     </li>
                 {% endfor %}
 
-                <li class="navbar__hire-us-item">
-                    <a href="{{ 'hire' | relative_url }}" class="navbar__hire-us-link">
-                        Hire Us
-                    </a>
-                </li>
-
             </ul>
+
+            <div class="btn-toolbar pull-right">
+                <div class="btn-group">
+                    <a href="{{ 'hire' | relative_url }}" class="btn btn-hire-menu">Hire Us</a>
+                </div>
+            </div>
 
         </div>
     </div>
