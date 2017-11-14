@@ -12,6 +12,3 @@ items:
 
  - src: "clients/foodrazor.png"
    alt: "Foodrazor restaurant business"
-
- - src: "clients/client.png"
-   alt: "Client description"
