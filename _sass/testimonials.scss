@@ -60,12 +60,12 @@
     }
 }
 
-hire-us-goto__arrow {
-    font-size: 20px;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
-}
+// hire-us-goto__arrow {
+//     font-size: 20px;
+//     -webkit-transition: all .2s linear;
+//     -o-transition: all .2s linear;
+//     transition: all .2s linear;
+// }
 
 .hire-us-goto {
   position: absolute;
@@ -86,12 +86,12 @@ hire-us-goto__arrow {
   -webkit-transform: translateZ(0) scale(1.0, 1.0);
   transform: translateZ(0);
 
-  &:hover {
-      color: $lightblue;
-      .hire-us-goto__arrow {
-          -webkit-transform: translateY(4px);
-          -ms-transform: translateY(4px);
-              transform: translateY(4px);
-      }
-  }
+  // &:hover {
+  //     color: $lightblue;
+  //     .hire-us-goto__arrow {
+  //         -webkit-transform: translateY(4px);
+  //         -ms-transform: translateY(4px);
+  //             transform: translateY(4px);
+  //     }
+  // }
 }
