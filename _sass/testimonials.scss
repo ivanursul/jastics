@@ -68,32 +68,30 @@ hire-us-goto__arrow {
 }
 
 .hire-us-goto {
-    position: absolute;
-    left: 0;
-    bottom: 18px;
-    width: 100%;
-    font-size: 18px;
-    color: $darkblue;
-    letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 100%;
+  font-size: 18px;
 
-    z-index: 2;
-    cursor: pointer;
-    text-align: center;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
 
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
 
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0) scale(1.0, 1.0);
-    transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0);
 
-    &:hover {
-        color: $lightblue;
-        .hire-us-goto__arrow {
-            -webkit-transform: translateY(4px);
-            -ms-transform: translateY(4px);
-                transform: translateY(4px);
-        }
-    }
+  &:hover {
+      color: $lightblue;
+      .services-goto__arrow {
+          -webkit-transform: translateY(4px);
+          -ms-transform: translateY(4px);
+              transform: translateY(4px);
+      }
+  }
 }
