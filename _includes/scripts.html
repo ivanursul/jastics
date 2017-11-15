@@ -15,6 +15,20 @@
 {% if page.layout == 'home' %}
     <script type="text/javascript" src="{{ '/assets/js/slick.min.js' | relative_url }}"></script>
     <script>
+    window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
         $(document).ready(function(){
             $(".clients-slider").on('init', function () {
                 $(".clients-slider__item").removeClass('invisible');

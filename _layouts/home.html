@@ -5,6 +5,8 @@
 
   <body data-gr-c-s-loaded="true" style="">
 
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
     {% include svgs.html %}
 
     {% include services_icons.svg %}
@@ -23,15 +25,15 @@
           <div class="services-goto__text">
               {{ site.data.services.goto_text }}
           </div>
-          <i class="fa fa-angle-down services-goto__arrow" aria-hidden="true"></i>        
+          <i class="fa fa-angle-down services-goto__arrow" aria-hidden="true"></i>
       </div>
 
     </div>
 
     {% include services.html %}
-    
+
     {% include how-we-work.html %}
-    
+
     {% include testimonials.html %}
 
     {% include footer.html %}
