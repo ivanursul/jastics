@@ -17,21 +17,21 @@
     <script>
     window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scrollBtn").style.display = "block";
-            } else {
-                document.getElementById("scrollBtn").style.display = "none";
-            }
-        }
+        $(window).scroll(function(event){
+          var scroll = $(window).scrollTop();
+          if (scroll >= 50) {
+            $(".go-top").addClass("show");
+          } else {
+            $(".go-top").removeClass("show");
+          }
+        });
 
-        function topFunction() {
-            //document.body.scrollTop = 0;
-            //document.documentElement.scrollTop = 0;
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-        }
+        $('#scrollBtn').click(function(){
+          $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+          }, 1000);
+        });
+
         $(document).ready(function(){
             $(".clients-slider").on('init', function () {
                 $(".clients-slider__item").removeClass('invisible');
