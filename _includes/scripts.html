@@ -15,8 +15,6 @@
 {% if page.layout == 'home' %}
     <script type="text/javascript" src="{{ '/assets/js/slick.min.js' | relative_url }}"></script>
     <script>
-    window.onscroll = function() {scrollFunction()};
-
         $(window).scroll(function(event){
           var scroll = $(window).scrollTop();
           if (scroll >= 50) {
