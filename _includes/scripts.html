@@ -15,6 +15,7 @@
 {% if page.layout == 'home' %}
     <script type="text/javascript" src="{{ '/assets/js/slick.min.js' | relative_url }}"></script>
     <script>
+
         $(window).scroll(function(event){
           var scroll = $(window).scrollTop();
           if (scroll >= 50) {
@@ -25,9 +26,9 @@
         });
 
         $('a').click(function(){
-          $('html, body').animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
-          }, 1000);
+          $('body,html').animate({
+              scrollTop: 0
+          }, 800);
         });
 
         $(document).ready(function(){
