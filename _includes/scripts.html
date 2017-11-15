@@ -26,8 +26,11 @@
         }
 
         function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+            //document.body.scrollTop = 0;
+            //document.documentElement.scrollTop = 0;
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
         }
         $(document).ready(function(){
             $(".clients-slider").on('init', function () {
