@@ -67,6 +67,11 @@
                     scrollTop: $("#testimonials-wrapper").offset().top
                 }, 1000);
             });
+            $('#hire-us-goto').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: $("#hire-us-wrapper").offset().top
+                }, 1000);
+            });
 
             $(".testimonials-items").on('init', function () {
                 $(".testimonial").removeClass('invisible');
