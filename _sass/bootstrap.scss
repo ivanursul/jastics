@@ -19,6 +19,7 @@ html {
 }
 body {
   margin: 0;
+  letter-spacing: 1px;
 }
 article,
 aside,
@@ -4296,9 +4297,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0px;
   color: #272A47;
   font-size: 20px;
-  font-weight: 700;
   line-height: 21px;
   height: 60px;
+  font-family: "Blissful Thinking";
 }
 
 .navbar-brand:hover,
@@ -6935,6 +6936,7 @@ a.mail {
 }
 
 .competence-header {
+  text-transform: uppercase;
   padding-bottom: 9.5px;
   margin: 3px 0 0 0px;
 }
@@ -7034,6 +7036,8 @@ img.center {
 }
 
 .expertise-title {
+  text-transform: uppercase;
+  font-weight: bold;
   font-size: 22px;
 }
 

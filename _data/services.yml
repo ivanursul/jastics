@@ -1,0 +1,21 @@
+goto_text: "what do we do?"
+
+items:
+
+- icon: dedicated-development-team
+  text: Dedicated Development Team
+
+- icon: software-product-development
+  text: Software Product Development
+
+- icon: mobile-application-development
+  text: Mobile Application Development
+
+- icon: software-qa-and-testing
+  text: Software QA & Testing
+
+- icon: technical-consulting
+  text: Technical Consulting
+
+- icon: technical-support
+  text: Technical Support

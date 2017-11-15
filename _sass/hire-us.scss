@@ -1,0 +1,54 @@
+.hire-us-wrapper {
+    background-color: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hire-us-work {
+    padding: 60px 0;
+    color: #fff;
+}
+
+.hire-us__heading,
+.hire-us__section-heading {
+    color: $darkblue;
+}
+
+.hire-us__heading {
+    margin-bottom: 2vw;
+    @media (max-width: 768px){
+        margin-bottom: 10px;
+        font-size: 38px;
+    }
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+
+.hire-us__section {
+    //padding-left: 0 !important;
+    @media (max-width: 990px){
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+.hire-us__section-text {
+    font-size: 20px;
+}
+
+.hire-us__section-heading {
+    font-size: 36px;
+    margin: 36px 0 20px;
+    @media (max-width: 768px){
+        font-size: 34px;
+    }
+}
+
+.hire-us__section-type {
+    color: $lightblue;
+    font-size: 26px;
+}
+
+.hire-us__section-text {
+    line-height: 32px;
+}

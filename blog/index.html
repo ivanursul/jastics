@@ -4,10 +4,11 @@ title: Blog
 type: post-summaries
 ---
 
-<h1 style="text-align: center; margin-top: 1em;">{{ page.title }}</h1>
+<div style="margin-top: 1em;" class="horizontal-lightblue-line-blog"></div>
+<h1 >{{ page.title }}</h1>
 
 <section class="posts">
-  
+
     {% for summary in paginator.posts %}
 
         {% include article_summary.html article_type='post' %}
@@ -30,6 +31,6 @@ type: post-summaries
             <i class="fa fa-angle-double-right"></i>
         </a>
     {% endif %}
-        
+
     </nav>
 {% endif %}

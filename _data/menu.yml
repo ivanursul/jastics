@@ -1,14 +1,15 @@
 items:
 
+- title: About Us
+  url: about-us
+
 - title: Expertise
   url: expertise
 
 - title: Resources
   url: '#'
   subitems:
-    - title: FAQ
-      url: faq
-
+    
     - title: Blog
       url: blog
 

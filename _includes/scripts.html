@@ -1,14 +1,101 @@
 <script src="{{ '/assets/js/jquery-1.10.2.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/jquery.visible.min.js' | relative_url }}"></script>
+
 {% if page.layout == 'post' or page.layout == 'whitepaper' %}
     <script src="{{ '/assets/js/anchor.min.js' | relative_url }}"></script>
     <script>
         anchors.options = {
             placement: 'left',
-            visible: 'always'            
+            visible: 'always'
         };
         anchors.add();
     </script>
 {% endif %}
+
+{% if page.layout == 'home' %}
+    <script type="text/javascript" src="{{ '/assets/js/slick.min.js' | relative_url }}"></script>
+    <script>
+
+        $(window).scroll(function(event){
+          var scroll = $(window).scrollTop();
+          if (scroll >= 50) {
+            $(".go-top").addClass("show");
+          } else {
+            $(".go-top").removeClass("show");
+          }
+        });
+
+        $('a').click(function(){
+          $('body,html').animate({
+              scrollTop: 0
+          }, 800);
+        });
+
+        $(document).ready(function(){
+            $(".clients-slider").on('init', function () {
+                $(".clients-slider__item").removeClass('invisible');
+            });
+            $('.clients-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                centerMode: false,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+
+            $('#services-goto').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: $("#services-wrapper").offset().top
+                }, 1000);
+            });
+            $('#how-we-work-goto').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: $("#how-we-work-wrapper").offset().top
+                }, 1000);
+            });
+            $('#testimonials-goto').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: $("#testimonials-wrapper").offset().top
+                }, 1000);
+            });
+            $('#hire-us-goto').on('click', function(){
+                $('html, body').animate({
+                    scrollTop: $("#hire-us-wrapper").offset().top
+                }, 1000);
+            });
+
+            $(".testimonials-items").on('init', function () {
+                $(".testimonial").removeClass('invisible');
+            });
+            $('.testimonials-items').slick({
+                nextArrow: '<i class="fa fa-chevron-right slick-next" aria-hidden="true"></i>',
+                prevArrow: '<i class="fa fa-chevron-left slick-prev" aria-hidden="true"></i>',
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2500,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            dots: true
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+{% endif %}
+
 <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
 

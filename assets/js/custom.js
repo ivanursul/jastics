@@ -75,4 +75,70 @@
 
   hover_menu();
 
+  var handle_menu = function(){
+
+    var main_menu = $('.main-menu');
+
+    $(window).scroll(function(){
+
+      if( $(document).scrollTop() > 50 ){
+        main_menu
+          .removeClass('show-menu')
+          .addClass('hide-menu')
+          .addClass('menu-fixed');
+      }
+
+      if( $(document).scrollTop() == 0 ){
+
+        main_menu
+          .delay(500)
+          .removeClass('hide-menu')
+          .addClass('menu-transition')
+          .addClass('show-menu')
+          .removeClass('menu-fixed');
+
+          setTimeout(function () { 
+            main_menu            
+              .removeClass('menu-transition')
+              .removeClass('show-menu');
+          }, 700);      
+
+      }
+
+    });
+
+    $(document).on( "mousemove", function( event ) {
+
+      var mouse_pos = event.pageY - $(document).scrollTop(),
+          main_menu = $('.main-menu'),
+          menu_height = $('.main_menu').height() || 50;
+
+      if($(document).scrollTop() > menu_height){
+        // the window has scrolled down
+        if( mouse_pos < menu_height ){
+          // the mouse is near the top
+          main_menu        
+            .removeClass('hide-menu')
+            .addClass('menu-transition')
+            .addClass('show-menu');
+        }
+        
+        if( $('.submenu').is(':visible') ){
+          menu_height += $('.submenu').height();
+        }
+
+        if( mouse_pos > menu_height ){
+          main_menu
+            .removeClass('show-menu')
+            .addClass('hide-menu');
+        }
+
+      }
+
+    });
+
+  };
+
+  handle_menu();
+
 })();
