@@ -505,12 +505,3 @@ footer p {
   margin: 40px 0;
   letter-spacing: 1px;
 }
-
-div::selection {
-  background: $darkblue;
-  color: $lightblue;
-}
-div::-moz-selection {
-  background:$darkblue;
-  color: $lightblue;
-}
