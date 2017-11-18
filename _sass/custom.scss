@@ -506,11 +506,11 @@ footer p {
   letter-spacing: 1px;
 }
 
-div.how-we-work-wrapper::selection {
+div::selection {
   background: white;
   color: $lightblue;
 }
-div.how-we-work-wrapper::-moz-selection {
+div::-moz-selection {
   background:lightblue;
   color: $lightblue;
 }
