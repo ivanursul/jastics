@@ -27,9 +27,11 @@
 .our-clients-goto {
     position: absolute;
     left: 0;
-    bottom: 6px;
+    bottom: 18px;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
 
     z-index: 2;
     cursor: pointer;
@@ -45,7 +47,7 @@
 
     &:hover {
         color: $lightblue;
-        .hire-us-goto__arrow {
+        .our-clients-goto__arrow {
             -webkit-transform: translateY(4px);
             -ms-transform: translateY(4px);
                 transform: translateY(4px);
