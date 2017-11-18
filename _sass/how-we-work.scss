@@ -53,6 +53,7 @@
     line-height: 32px;
 }
 
+
 .testimonials-goto__arrow {
     font-size: 20px;
     -webkit-transition: all .2s linear;
@@ -63,11 +64,9 @@
 .testimonials-goto {
     position: absolute;
     left: 0;
-    bottom: 18px;
+    bottom: 6px;
     width: 100%;
     font-size: 18px;
-    color: #fff;
-    letter-spacing: 1px;
 
     z-index: 2;
     cursor: pointer;
