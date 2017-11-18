@@ -507,10 +507,10 @@ footer p {
 }
 
 div::selection {
-  background: white;
+  background: $darkblue;
   color: $lightblue;
 }
 div::-moz-selection {
-  background:lightblue;
+  background:$darkblue;
   color: $lightblue;
 }
