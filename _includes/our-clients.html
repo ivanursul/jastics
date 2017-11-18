@@ -1,0 +1,28 @@
+<div id="our-clients-wrapper" class="container-fluid our-clients-wrapper">
+
+    <div class="container our-clients">
+
+        <div class="col-md-12">
+            <div class="horizontal-darkblue-line"></div>
+        </div>
+
+        <div class="col-md-12">
+            <h2 class="our-clients__heading">
+                Our Clients
+            </h2>
+        </div>
+
+        <div class="col-md-12">
+          {% include clients_slider.html %}
+        </div>
+
+    </div>
+
+    <div id="testimonials-goto" class="testimonials-goto">
+        <div class="testimonials-goto__text">
+            {{ site.data.testimonials.goto_text }}
+        </div>
+        <i class="fa fa-angle-down testimonials-goto__arrow" aria-hidden="true"></i>
+    </div>
+
+</div>
