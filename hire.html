@@ -1,27 +1,22 @@
 ---
-layout: page
-title: Hire us
-subtitle: It's critical for us to know a broad strokes about the work you want us to do for you.<br>Write them and we will contact you within 24 hours. 
+layout: default
+title: Hire Us
 ---
 
-<section class="hire-us-page">
+<div class="row competence">
 
-        <div class="hire-us__content">
+    <div class="col-lg-2"></div>
 
-            <form action="https://formspree.io/me@ivanursul.com" method="POST">
-                <input type="text" placeholder="Name" class="hire-us__input hire-us__input--text">
-                <input type="text" placeholder="Email/phone" class="hire-us__input hire-us__input--text">
-                <textarea class="hire-us__input hire-us__input--textarea" placeholder="Basic info we need to know" rows="10"></textarea>
-            </form>
+    <div class="col-lg-8">
+
+        <div class="center-row-fluid">
+
+            {% include hire-form.html %}
 
         </div>
 
-        <div class="hire-us__btn">
-            <button type="submit" class="hire-us-btn hire-us-btn--blue hire-us-btn--send hire-us-btn--centered">
-                <span class="hire-us-btn__text hire-us-btn__text--send">
-                    Send
-                </span>
-            </button>
-        </div>
+    </div>
 
-</section>
+    <div class="col-lg-2"></div>
+
+</div>

@@ -1,4 +1,5 @@
 ---
+layout: "post"
 title:  "Detecting memory leaks using JVisualVM and Memory Analyzer Tool"
 date: 2017-08-15 10:33:00
 permalink: memory-leak
@@ -25,7 +26,6 @@ I had a problem on a production instance, so I started my services with JMX feat
 Just enter your terminal and type `jvisualvm`.
 
 You should get following screen:
-
 ![](assets/images/memory-leak/jvisualvm.png){: .center-image }
 
 Add a remote connection, specify JMX port and connect.
