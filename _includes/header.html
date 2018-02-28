@@ -1,48 +1,39 @@
-<div id="main-navbar" class="navbar navbar-default">
-    <div class="container-fluid main-menu">
+<div id="site-header-wrapper" class="site-header-wrapper">
 
-        <div class="navbar-header">
-            <a href="{{ '/' | relative_url }}" class="navbar-brand navbar-jastics">{{ site.title }}</a>
-            <button type="button" class="btn btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+    <header class="site-header site-header--page container menu-closed">
 
-        <div class="navbar-collapse collapse" id="navbar-main">
+        <a id="site-header__logo" href="{{'/' | relative_url}}" class="site-header__logo">
+            <span class="site-header-logo__text">{{ site.title }}</span>
+        </a>
 
-            <ul class="nav navbar-nav navbar-items navbar--right">
+        <div class="site-header__links site-header__links--page" id="header-links">
+            
+            <a href="{{ '/hire' | relative_url }}" class="hire-us-btn hire-us-btn--page" id="hire-us-btn--page">
+                <span class="hire-us-btn__text">
+                    Hire Us
+                </span>
+            </a>
 
-                {% for item in site.data.menu.items %}
-                    {% assign page_url = page.url | remove: '/' | remove: '.html' %}
-                    {% assign sub_items_size = item.subitems | size %}
-                    <li class="navbar__item {% if item.url == page_url %}active{% endif %}{% if sub_items_size > 0 %}navbar__item--parent{% endif %}">
-                        <a class="navbar__link {% if sub_items_size > 0 %}navbar__link--parent{% endif %}" href="{{ item.url | relative_url }}">
-                            {{ item.title }}
-                        </a>
-                        {% if sub_items_size > 0 %}
-                            <ul class="submenu">
-                                {% for subitem in item.subitems %}
-                                    <li class="submenu__item">
-                                        <a class="submenu__link" href="{{ subitem.url | relative_url }}">
-                                            {{ subitem.title }}
-                                        </a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                    </li>
-                {% endfor %}
+            <nav class="site-nav site-nav--page">
 
-                <li class="navbar__hire-us-item">
-                    <a href="{{ 'hire' | relative_url }}" class="navbar__hire-us-link">
-                        Hire Us
-                    </a>
-                </li>
+                <div class="site-nav__icon site-nav__icon--page site-nav__icon--open-menu" id="open-menu--page">
+                    {% include svg/icon.html id='open-menu-icon' %}
+                </div>
 
-            </ul>
+                <div class="site-nav__icon site-nav__icon--close-menu" id="close-menu--page">
+                    {% include svg/icon.html id='close-menu-icon' %}
+                </div>
+            
+            </nav>
+
+            {% include nav.html modifier='page' %}
 
         </div>
-    </div>
+
+        <div class="nav-wrapper nav-wrapper--page" id="nav-wrapper"></div>
+
+    </header>
+
+    
+
 </div>

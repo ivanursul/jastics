@@ -1,0 +1,22 @@
+.site-footer {
+
+    background-color: $darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+
+    &__title {
+        text-transform: uppercase;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    &__email-text {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 1.5;
+        vertical-align: bottom;
+    }
+
+}

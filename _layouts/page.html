@@ -1,14 +1,21 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+<div class="line line--lightblue"></div>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+<header class="page__header">
 
-</article>
+  <h1 class="page__title">
+      {{ page.title }}
+  </h1>
+
+  {% if page.subtitle %}
+    <div class="page__subtitle">
+      {{ page.subtitle }}
+    </div>
+  {% endif %}
+
+</header>
+
+{{ content }}

@@ -1,0 +1,36 @@
+<section class="section what-we-do container full-page">
+
+    <div class="line line--section line--lightblue" id="what-we-do"></div>
+
+    <header class="section__header">
+
+        <h2 class="section__title">
+            What we do
+        </h2>
+
+        <p class="section__subtitle">
+            Services
+        </p>
+        
+    </header>
+
+    <div class="what-we-do__content section__content">
+
+        <div class="what-we-do__icons">
+            {% for item in site.data.what-we-do-icons.items %}
+            <div class="what-we-do__icon {{ item.icon_id }}-icon">
+                {% include svg/icon.html id=item.icon_id classes='what-we-do__icon-svg' %}
+                <div class="what-we-do__desc">
+                    {{ item.title }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <a id="what-we-do-goto" href="#how-we-work" class="go-to-next go-to-next--section">
+        {% include svg/icon.html id='scroll-down-icon' %}
+    </a>
+
+</section>

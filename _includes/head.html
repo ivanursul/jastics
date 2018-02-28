@@ -12,14 +12,10 @@
   </title>
 
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-
+  
   <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
 
-  {% assign timestamp = site.time | date: '%s%N' %}
-  {% assign main_css = '/assets/main.css?v=' | append: timestamp %}
-  <link rel="stylesheet" href="{{ main_css | relative_url }}">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+  <!-- <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
@@ -27,5 +23,10 @@
     {% include google-analytics.html %}
   {% endif %}
 
-  <meta name="google-site-verification" content="jdXpZtJnJLL_sJMFkGHwdy3l0Y6sIvegZ0OQGoYRV4o" />
+  {% if site.google_site_verification.use %}
+    <meta name="google-site-verification" content="{{ site.google_site_verification.content }}" />
+  {% endif %}
+  
+  {% include styles/main.html %}
+
 </head>

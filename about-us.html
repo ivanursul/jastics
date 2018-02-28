@@ -1,66 +1,121 @@
 ---
-layout: default
-title: "About Us"
+layout: generic-page
+title: About us
 ---
 
-<div class="container page">
+<section class="about-us">
 
-    <div class="horizontal-lightblue-line col-md-12 pushed-right"></div>
+    <div class="about-us__item container">
 
-    <h1 class="page__heading col-md-12">{{ page.title }}</h1>
+        <div class="about-us__header-item about-us__header-text">
 
+            <div class="line line--lightblue"></div>
 
-    <div class="row">
-        <div class="col-md-8">
+            <header class="page__header page__header--about-us">
+                <h1 class="page__title">
+                    {{ page.title }}
+                </h1>
+            
+                {% if page.subtitle %}
+                    <div class="page__subtitle">
+                        {{ page.subtitle }}
+                    </div>
+                {% endif %}
+            </header>
+        
+
+            <div class="post__content">
+                <p>
+                    We are the software creators. We build a solutions for you. No matter what you want: create a software for your business, scale enormously growing amount of a new users in your system, or after all, working on something exciting and need a help? We are here to support you in your ideas.
+                </p>
+                <p>
+                    Working on your project means we are doing a complete deep-dive into it. 
+                </p>
+            </div>
+
+        </div>
+
+        <div class="about-us__header-item about-us__header-img-wrapper">
+            <img class="about-us__header-img" src="{{ '/assets/images/site/about-us-img.png' | relative_url }}" alt="">
+        </div>
+
+    </div>
+
+    <div class="about-us__item about-us__numbers-wrapper">
+
+        <div class="about-us__numbers">
+
+            <div class="about-us__numbers-item">
+                <div class="about-us__numbers-number">
+                    10
+                </div>
+                <div class="about-us__numbers-text">
+                    specialists
+                </div>
+            </div>
+            <div class="about-us__numbers-item">
+                <div class="about-us__numbers-number">
+                    2
+                </div>
+                <div class="about-us__numbers-text">
+                    current clients
+                </div>
+            </div>
+            <div class="about-us__numbers-item">
+                <div class="about-us__numbers-number">
+                    25+
+                </div>
+                <div class="about-us__numbers-text">
+                    projects in portfolio
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="about-us__item container">
+
+        <div class="about-us__info post__content">
+
+            <h2 class="about-us__info-title">
+                Our experience is what we are proud of
+            </h2>
+
             <p>
-              We are the software creators. We build a solutions for you. No matter what you want: create a software for your business, scale enormously growing amount of a new users in your system, or after all, working on something exciting and need a help? We are here to support you in your ideas.
+                Our founders worked on a big and small companies, participated in building platforms like Upwork and have a good baggage of experience.
             </p>
 
             <p>
-              Working on your project means we are doing a complete deep-dive into it.
+                We know how to build software. We know how to maintain it. We are responsible for it. 
             </p>
-        </div>
-        <div class="col-md-4">
-        </div>
-    </div>
 
-    <div class="row page__section">
-
-        <div class="col-md-4 col-sm-6 col-xs-6">
-            <p class="big-text text-lightblue">10</p>
-            <p>specialists</p>
         </div>
 
-        <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-1">
-            <p class="big-text text-lightblue">2</p>
-            <p>current clients</p>
-        </div>
-
-        <div class="col-md-3 col-sm-6 col-xs-6 col-md-offset-1">
-            <p class="big-text text-lightblue">25+</p>
-            <p>projects in portfolio</p>
+        <div class="hire-us__btn about-us__btn">
+            <a href="" class="hire-us-btn hire-us-btn--blue hire-us-btn--learn-more">
+                <span class="hire-us-btn__text hire-us-btn__text--about-us">
+                    Learn More
+                </span>
+            </a>
         </div>
 
     </div>
-    <div class="row page__section">
-      <div class="col-md-6">
-        <!-- <img src="{{ '/assets/images/bw.jpg' | relative_url }}" class="about-us-image" alt="Responsobility"> -->
-      </div>
-      <div class="col-md-6">
-          <h3>Our experience is what we are proud of</h3>
-          <p>
-            Our founders worked on a big and small companies, participated in building platforms like Upwork and have a good baggage of experience.
-          </p>
-          <p>
-            Our founders worked on a big and small companies, participated in building platforms like Upwork and have a good baggage of experience.
-          </p>
 
-          <h3>
-            We are fully responsible for everything we do for your business.
-          </h3>
-          <p>
-            Being a small software company, our founders have the responsibillity to manage every project. We then responsible for every line of code, every aspect of a solution, which we do for you.
-          </p>
-      </div>
+    <div class="about-us__item container">
+
+        <div class="about-us__info post__content">
+
+            <h2 class="about-us__info-title">
+                We are fully responsible for everything we do for your business
+            </h2>
+
+            <p>
+                Being a small software company, our founders have the responsibillity to manage every project. We then responsible for every line of code, every aspect of a solution, which we do for you.                
+            </p>
+
+        </div>
+
     </div>
-</div>
+
+</section>

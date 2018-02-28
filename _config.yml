@@ -13,16 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Jastics Labs
 
 email: info@jastics.com
 
-description: > # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "baseurl:"
   Jastics Labs is a team of professional software engineers from Lviv, Ukraine.
   Backend development, High Load systems, Internet of things, Frontend development.
   Java, Scala, JS. Let's work together!
 
-baseurl: ""
+baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "https://jastics.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -30,6 +31,7 @@ repository: 'ivanursul/jastics'
 
 github: [metadata]
 
+# Social links
 linkedin_url: https://www.linkedin.com/company/11286826/
 twitter_url: https://twitter.com/jastics
 upwork_url:  https://www.upwork.com/agencies/~013609ed8111b7920c
@@ -46,24 +48,38 @@ google_analytics:
   enabled: false
   tracking_code: UA-106871498-1
 
+google_site_verification:
+  use: true
+  content: jdXpZtJnJLL_sJMFkGHwdy3l0Y6sIvegZ0OQGoYRV4o
+
 collections:
   whitepapers:
-    output: true
+    output: true    
+  expertise:
+    output: false
 
 defaults:
   - scope:
       path: ""
+      type: posts
+    values:
+      layout: post
+      page_type: post
+
+  - scope:
+      path: ""
       type: whitepapers
     values:
-      layout: whitepaper
+      layout: post
+      page_type: whitepaper
 
 sass:
-  style: compressed
+  style: compressed      
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
 
+# theme: minima
 plugins:
   - jekyll-feed
   - github-pages

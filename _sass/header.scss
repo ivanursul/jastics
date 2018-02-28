@@ -1,0 +1,89 @@
+.site-header-wrapper {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+
+    &--shadowed {
+        -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+                box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    }
+}
+
+.site-header {
+
+    @include clearfix;
+
+    &__links {
+        float: right;
+        position: relative;
+
+        &--page {
+            top: 8px;
+        }
+
+        &--page {
+
+            .site-header--page.menu-open & {
+                @media (max-width: 500px) {
+                    width: 100%;
+                    text-align: right;
+                    padding-right: 16px;
+                }
+            }
+
+        }
+
+    }
+
+    &__logo {
+
+        float: left;
+        font-family: "Blissful Thinking", sans-serif;
+        font-size: 40px;
+        color: $darkblue;
+        letter-spacing: 1px;
+
+        -webkit-transition: color .2s linear;
+                transition: color .2s linear;
+
+        &:hover {
+            color: $lightblue;
+        }
+
+
+        @include breakpoint(small) {
+            float: none;
+            display: block;
+            text-align: left;
+            margin-bottom: 12px;
+        }
+
+    }
+
+    &--page {
+
+        //padding: 25px 0 75px;
+        padding: 16px 0;
+
+        @include breakpoint(small) {
+            padding: 12px 0 8px;
+        }
+
+        .site-header__logo {
+
+            @include breakpoint(small) {
+                display: inline-block;
+            };
+
+
+            &--hidden {
+                @media (max-width: 500px) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+
+}

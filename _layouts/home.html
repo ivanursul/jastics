@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+    {% include head.html %}
 
-  <body data-gr-c-s-loaded="true" style="">
+    <body id="home" class="site-body">
 
-    <a class="go-top" id="scrollBtn" href="#">
-      <i class="fa fa-angle-up"></i>
-    </a>
+        {% include svg/icons.svg %}
 
-    {% include svgs.html %}
+        <div class="nav-wrapper" id="nav-wrapper"></div>
 
-    {% include services_icons.svg %}
+        {% include banner.html %}
 
-    <div class="front-wrapper">
+        {% include sections/what-we-do.html %}
+        
+        {% include sections/how-we-work.html %}
+        
+        {% include sections/our-clients.html %}
+        
+        {% include sections/hire-us.html %}
+        
+        {% include footer.html %}
 
-      {% include header.html %}
+        <a class="go-top" id="scrollBtn" href="#home">
+            {% include svg/icon.html id='arrow-up' classes='go-to-top-icon' %}
+        </a>
 
-      <main id="main" class="center-container-fluid home-main" aria-label="Content">
+        {% include scripts/footer.html %}
 
-        {% include home_banner.html %}
+        {% include scripts/home.html %}
 
-      </main>
-
-      <div id="services-goto" class="services-goto">
-          <div class="services-goto__text">
-              {{ site.data.services.goto_text }}
-          </div>
-          <i class="fa fa-angle-down services-goto__arrow" aria-hidden="true"></i>
-      </div>
-
-    </div>
-
-    {% include services.html %}
-
-    {% include how-we-work.html %}
-
-    {% include testimonials.html %}
-
-    {% include hire-us.html %}
-
-    {% include footer.html %}
-
-  </body>
+    </body>
 
 </html>

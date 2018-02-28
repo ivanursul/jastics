@@ -1,58 +1,56 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+---
+layout: default
+---
 
-  {% include head.html %}
+<article class="post">
 
-  <body>
+    <div class="line line--lightblue"></div>
 
-    {% include svgs.html %}
+    <header class="post__header">
 
-    {% include header.html %}
+        <h1 class="post__title">
+            {{ page.title }}
+        </h1>
 
-    <main class="container" aria-label="Content">
+        <section class="post__meta">
+            <time class="post__date" datetime="{{ page.date | date: '%d.%m.%Y' }}">
+                {{ page.date | date: '%d.%m.%Y' }}
+            </time>
+            <a
+                class="post__comments-count"
+                href="{{ page.url | relative_url }}#disqus_thread"
+                data-disqus-identifier='{{ page.url | absolute_url }}'
+            >
+                Comments
+            </a>
+        </section>
 
-        <article class="post">
+    </header>
 
-            <header class="article-header">
+    <section class="post__content">
 
-                <h1 class="post-title">
-                    {{ page.title | escape }}
-                </h1>
+        {{ content }}
 
-                <div class="post-meta">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <time datetime="{{ page.date | date: '%Y/%m/%d' }}">
-                        {{ page.date | date_to_string }}
-                    </time>
-                    &nbsp;•&nbsp;
-                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                    <a
-                      class="comments-count"
-                      href="{{ page.url | relative_url }}#disqus_thread"
-                      data-disqus-identifier='{{ page.url | absolute_url }}'
-                    >
-                      Comments
-                    </a>
-                </div>
+    </section>
 
-            </header>
+</article>
 
-            <div class="post-content">
-                {{ content }}
-            </div>
+{% if page.page_type == 'post' %}
 
-            {% include posts-nav.html %}
+    {% assign page_type = 'Blog' %}
+    {% assign return_url = '/blog' %}
 
-            {% if site.disqus.comments %}
-                {% include comments.html %}
-            {% endif %}
+{% elsif page.page_type == 'whitepaper' %}
 
-        </article>
+    {% assign page_type = 'Whitepapers' %}
+    {% assign return_url = '/whitepapers' %}
 
-    </main>
+{% endif %}
 
-    {% include footer.html %}
+<a href="{{ return_url | relative_url }}" class="return-back">
+    <span class="return-back__arrow">&larr;</span> Back to {{ page_type }}
+</a>
 
-  </body>
-
-</html>
+{% if site.disqus.comments %}
+    {% include comments.html %}
+{% endif %}
