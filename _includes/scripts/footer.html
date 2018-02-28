@@ -1,0 +1,22 @@
+{% if page.layout == 'post' %}
+
+    <script src="{{ '/assets/js/anchor.min.js' | relative_url }}"></script>
+    <script>
+        anchors.options = {
+            visible: 'always',
+            placement: 'left'
+        };
+        anchors.add();
+    </script>
+
+{% endif %}
+
+<script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+</script>
+
+<script id="dsq-count-scr" src="//{{ site.disqus.shortname }}.disqus.com/count.js" async></script>
+
+<script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>

@@ -1,0 +1,33 @@
+<article class="post summary">
+
+    <h2 class="summary__title">
+        <a class="summary__title-link" href="{{ summary.url | relative_url }}">
+            {{ summary.title }}
+        </a>
+    </h2>
+
+    <section class="post__meta">
+        {% if summary.date %}
+            <time class="post__date" datetime="{{ summary.date | date: '%d.%m.%Y' }}">
+                {{ summary.date | date: '%d.%m.%Y' }}
+            </time>
+        {% endif %}
+        <a
+            class="post__comments-count"
+            href="{{ summary.url | relative_url }}#disqus_thread"
+            data-disqus-identifier='{{ summary.url | absolute_url }}'
+        >
+            Comments
+        </a>
+    </section>        
+
+    <section class="post__content">
+
+        <p>
+            {{ summary.content | markdownify | strip_html | truncatewords: 50 }}
+            <a class="summary__more" href="{{ summary.url | relative_url }}">Learn more</a>
+        </p>
+
+    </section>
+
+</article>

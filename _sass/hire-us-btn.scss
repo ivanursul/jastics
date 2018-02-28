@@ -1,0 +1,165 @@
+.hire-us-btn {
+
+    $padding-top: 12px;
+
+    z-index: 2;
+
+    margin-right: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: $padding-top 24px;
+    border-top-left-radius: 25% 100%;
+    border-bottom-left-radius: 25% 100%;
+    border-top-right-radius: 25% 100%;
+    border-bottom-right-radius: 25% 100%;
+    position: relative;
+    bottom: $padding-top;
+
+    -webkit-transition: background-color .2s linear;
+            transition: background-color .2s linear;
+
+    &__text {
+        font-size: 15px;
+        font-family: 'Gotham Pro Bold', sans-serif;
+        color: #fff;
+        letter-spacing: 6px;
+
+        -webkit-transition: color .2s linear;
+        transition: color .2s linear;        
+
+        &--send {
+            padding: 0 28px;
+        }
+
+        &--about-us {
+            font-size: 12px;
+        }
+
+    }
+
+    &:hover {
+        background-color: #fff;
+        .hire-us-btn__text {
+            color: $black;
+        }
+    }
+    
+    &--blue {
+
+        position: static;
+        background-color: $lightblue;
+        border: 2px solid $lightblue;
+
+        -webkit-transition: box-shadow .1s linear;
+            -webkit-transition: -webkit-box-shadow .1s linear;
+            transition: -webkit-box-shadow .1s linear;
+            transition: box-shadow .1s linear;
+            transition: box-shadow .1s linear, -webkit-box-shadow .1s linear;
+
+        @include breakpoint(small) {
+            width: auto;
+            text-align: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        &:hover {
+            -webkit-box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+                    box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+            background-color: $lightblue;
+            .hire-us-btn__text {
+                color: #fff;
+            }
+        }
+
+    }
+
+    &--page {
+
+        z-index: 3;
+        background-color: $lightblue;
+        border: 2px solid $lightblue;
+        -webkit-transition: box-shadow .1s linear, border-color .2s linear;
+            -webkit-transition: border-color .2s linear, -webkit-box-shadow .1s linear;
+            transition: border-color .2s linear, -webkit-box-shadow .1s linear;
+            transition: box-shadow .1s linear, border-color .2s linear;
+            transition: box-shadow .1s linear, border-color .2s linear, -webkit-box-shadow .1s linear;
+        
+        &:hover {
+            -webkit-box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+                    box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+            background-color: $lightblue;
+            .hire-us-btn__text {
+                color: #fff;
+            }
+        }
+
+        @media (max-width: 500px) {
+            display: none;
+        }        
+
+        .site-header--page.menu-closed & {
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
+
+        .site-header--page.menu-open & {
+            @media (max-width: 500px) {
+                display: inline-block;
+                float: left;
+                position: relative;
+                bottom: 6px;
+            }
+        }
+
+    }
+
+    &--send {
+        @include breakpoint(small) {
+            width: auto;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+
+    &--learn-more {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        @include breakpoint(small) {
+            width: auto;
+        }
+    }
+
+    &--centered {
+        // margin-left: 50%;
+        // transform: translateX(-50%);
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &--white-bordered {
+
+        border-color: #fff;
+
+        -webkit-transition: background-color .2s linear, border-color .2s linear;
+        transition: background-color .2s linear, border-color .2s linear;
+        
+        .hire-us-btn__text {
+            -webkit-transition: color .2s linear;
+            transition: color .2s linear;
+        }
+
+        &:hover {
+            background-color: #fff;
+            .hire-us-btn__text {
+                color: $black;
+            }  
+        }
+
+    }
+
+}

@@ -1,0 +1,69 @@
+<section class="banner" id="banner">
+
+    <div class="banner__container container">
+
+        <header class="site-header site-header--home">
+
+            <div class="site-header__links" id="header-links" >
+        
+                <a href="{{ '/hire' | relative_url }}" class="hire-us-btn">
+                    <span class="hire-us-btn__text">
+                        Hire Us
+                    </span>
+                </a>
+
+                <nav class="site-nav">
+
+                    <div class="site-nav__icon site-nav__icon--open-menu" id="open-menu">
+                        {% include svg/icon.html id='open-menu-icon' %}
+                    </div>
+
+                    <div class="site-nav__icon site-nav__icon--close-menu" id="close-menu">
+                        {% include svg/icon.html id='close-menu-icon' %}
+                    </div>
+                
+                </nav>
+
+                {% include nav.html %}
+
+            </div>            
+
+        </header>
+
+        <a href="{{'/' | relative_url}}" class="banner-logo">
+            <span class="banner-logo__text">{{ site.title }}</span>
+        </a>
+
+        <div class="line line--banner line--white"></div>
+
+        <p class="banner__slogan">
+            We're a team of software engineers, data experts & thinkers, who craft digital experience.
+        </p>
+
+
+    </div>
+
+    <div class="banner__socials-wrapper">
+        <div class="banner__socials">
+            <div class="banner__social-icons">
+                <a href="{{ site.twitter_url }}" class="social-icon social-icon--banner">
+                    {% include svg/icon.html id='twitter-icon' %}
+                </a>
+                <a href="{{ site.linkedin_url }}" class="social-icon social-icon--banner">
+                    {% include svg/icon.html id='linkedin-icon' %}
+                </a>
+                <a href="{{ site.linkedin_url }}" class="social-icon social-icon--banner">
+                    {% include svg/icon.html id='facebook-icon' %}
+                </a>
+                <a href="{{ site.upwork_url }}" class="social-icon social-icon--banner social-icon--banner-upwork">
+                    {% include svg/icon.html id='upwork-icon' %}
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <a href="#what-we-do" class="go-to-next go-to-next--banner" id="banner-goto">
+        {% include svg/icon.html id='scroll-down-icon' %}
+    </a>    
+
+</section>

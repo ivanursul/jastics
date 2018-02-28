@@ -1,0 +1,26 @@
+img {
+    max-width: 100%;
+}
+
+.cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.fixed-menu {
+    position: fixed !important;
+    height: 100%;
+}
+
+.jumbotron {
+    padding-top: 125px;
+    @include breakpoint(small) {
+        padding-top: 116px;
+    }
+}
