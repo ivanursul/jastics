@@ -1,0 +1,9 @@
+items:
+
+    - title: Full-cyle solutions
+      desc: If you need to develop a new <br>software from the scratch <br>or modernize your legacy system
+      icon_id: full-cycle-solutions
+
+    - title: Project-based
+      desc: If you have a direction where <br>to go and need an extra <br>hands to speed up things
+      icon_id: project-based

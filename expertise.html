@@ -3,39 +3,66 @@ layout: default
 title: Expertise
 ---
 
-<div class="center-container-fluid expetise-container">
-    <div class="row competence">
-        <div class="col-md-7 left-competence">
-            <div class="competence-header competence-tags">
-                <a id="cloud_solutions" class="competence-tag" onclick="showExpertiseOnClick('cloud_solutions')" href="#">
-                    #Cloud Solutions
+{% assign expertise_items = site.expertise | sort: 'order' %}
+
+<section id="expertise" class="expertise">
+
+    <ul class="expertise__tags">
+
+        {% for item in expertise_items %}
+            <li class="expertise__tag">
+                <a class="expertise__tag-link{% if forloop.index == 1 %} expertise__tag-link--active{% endif %}" href="#expertise-{{ item.title | slugify }}">
+                    #{{ item.title }}
                 </a>
-                <a id="serverless" class="competence-tag" onclick="showExpertiseOnClick('serverless')" href="#">
-                    #Serverless
-                </a>
-                <a id="highload" class="competence-tag" onclick="showExpertiseOnClick('highload')" href="#">
-                    #HighLoad
-                </a>
-                <a id="uiux" class="competence-tag" onclick="showExpertiseOnClick('uiux')" href="#">
-                    #UI/UX
-                </a>
+            </li>
+        {% endfor %}
+
+        </ul>
+
+    <section class="expertise__content-wrapper">
+
+        {% for item in expertise_items %}
+
+            <div id="expertise-{{ item.title | slugify }}" class="expertise__content{% if forloop.index == 1 %} expertise__content--active{% endif %}">
+
+                <div class="expertise__content-item expertise__content-item--content">
+
+                    <div class="line line--lightblue"></div>
+
+                    <header class="page__header page__header--expertise">
+
+                        <h1 class="page__title page__title--expertise">
+                            {{ item.title }}
+                        </h1>
+
+                        <div class="page__subtitle page__subtitle--expertise">
+                            {% for tag in item.tags %}
+                                {% unless forloop.last %}
+                                    {{ tag }}, 
+                                {% else %}
+                                    {{ tag }}
+                                {% endunless %}
+                            {% endfor %}
+                        </div>
+
+                    </header>
+
+                    <div class="expertise__item-content post__content">
+                        {{ item.content }}
+                    </div>
+
+                </div>
+
+                <div class="expertise__content-item expertise__content-item--media">
+                    <video src="{{ item.media_file | relative_url }}" width="90%" height="90%" autoplay loop>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
             </div>
 
-            <!-- <img id="animationImg" width="90%" height="90%" src="" hidden> -->
+        {% endfor %}
 
-            <video id="video" width="90%" height="90%" autoplay="autoplay" hidden loop>
-                Your browser does not support the video tag.
-            </video>
-        </div>
+    </section>
 
-        <div class="col-md-5 right-competence">
-
-            <div id="title" expertise-name="" class="expertise-title"></div>
-
-            <div id="tags" class="expertise-tags"></div>
-
-            <div class="expertise_description" id="description"></div>
-
-        </div>
-    </div>
-</div>
+</section>

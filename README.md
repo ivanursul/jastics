@@ -1,3 +1,0 @@
-# jastics
-
-Jastics Labs website

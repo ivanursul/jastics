@@ -1,0 +1,71 @@
+<section class="section our-clients container full-page">
+
+    <div class="line line--section line--lightblue" id="our-clients"></div>
+
+    <header class="section__header">
+
+        <h2 class="section__title">
+            Our Clients
+        </h2>
+
+        <p class="section__subtitle">
+            Testimonials
+        </p>
+        
+    </header>
+
+    <div class="section__content section__content--our-clients">
+
+        <ul id="our-clients__content" class="our-clients__content hidden">
+
+            {% for item in site.data.our-clients.items %}
+                
+                <li id="client-{{ item.name | slugify }}" class="our-clients__item {% if forloop.index == 1 %}our-clients__item--active{% endif %} {% if item.feedback %}our-clients__item--has-feedback{% endif %}" data-client="{{ item.name | slugify }}-client">
+
+                    <img class="our-clients__item-img {% if item.feedback %} our-clients__item-img--has-feedback{% endif %}" src="{{ '/assets/images/clients/' | append: item.image | relative_url }}" alt="{{ item.name }} logo" title="{{ item.name }}">
+    
+                </li>
+
+            {% endfor %}
+
+        </ul>
+
+        <div class="our-clients__feedback">
+
+            <span id="our-clients__arrow" class="our-clients__arrow">
+                <img src="{{ '/assets/images/site/triangle.png' | relative_url }}" alt="">
+            </span>
+
+            {% for item in site.data.our-clients.items %}
+                
+                <div id="{{ item.name | slugify }}-client" class="our-clients__feedback-item {% if forloop.index == 1 %}our-clients__feedback-item--active{% endif %}">
+
+                    <div class="our-clients__feedback-item-content">
+
+                        <h3 class="our-clients__feedback-item-title">
+                            {{ item.name }}
+                        </h3>
+        
+                        <p class="our-clients__feedback-item-text">
+                            <span class="our-clients__feedback-item-quote">
+                                {% include svg/icon.html id='quotes-right' %}
+                            </span>
+        
+                            {{ item.feedback }}
+                        </p>
+
+                    </div>
+    
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <a id="our-clients-goto" href="#hire-us" class="go-to-next go-to-next--section">
+        {% include svg/icon.html id='scroll-down-icon' %}
+    </a>
+
+</section>

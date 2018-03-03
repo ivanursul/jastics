@@ -1,0 +1,28 @@
+.banner-logo {
+
+    display: inline-block;
+    margin-top: 25vh;
+
+    font-family: "Blissful Thinking", sans-serif;
+    font-size: 90px;
+    color: #fff;
+    letter-spacing: 1px;
+
+    @include breakpoint(medium) {
+        font-size: 70px;
+        margin-top: 6vh;
+    }
+
+    @include breakpoint(small) {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+
+    -webkit-transition: color .2s linear;
+            transition: color .2s linear;
+
+    &:hover {
+        color: $lightblue;
+    }
+
+}

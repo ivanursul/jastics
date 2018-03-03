@@ -1,17 +1,14 @@
 ---
-layout: generic
+layout: page
 title: Whitepapers
-permalink: /whitepapers/
+sibtitle: Side projects and fun
 ---
 
-<div style="margin-top: 1em;" class="horizontal-lightblue-line-blog"></div>
-<h1 >{{ page.title }}</h1>
-
-<section class="posts">
+<section class="blog whitepapers">
 
     {% for summary in site.whitepapers %}
 
-        {% include article_summary.html article_type='whitepaper' %}
+        {% include article-summary.html %}
 
     {% endfor %}
 

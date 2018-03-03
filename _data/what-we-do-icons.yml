@@ -1,0 +1,19 @@
+items:
+
+  - title: Dedicated Development Team
+    icon_id: dedicated-develpoment-team
+
+  - title: Software Product Development
+    icon_id: software-product-development
+
+  - title: Mobile Application Development
+    icon_id: mobile-application-development
+
+  - title: Software QA & Testing
+    icon_id: software-qa-and-testing
+
+  - title: Technical Consulting
+    icon_id: technical-consulting
+
+  - title: Technical Support
+    icon_id: technical-support
