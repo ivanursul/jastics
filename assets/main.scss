@@ -1,5 +1,14 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-
-// Edit _sass/_main.scss instead
+@import "vars";
+@import "bootstrap";
+@import "slick";
+@import "custom";
+@import "blog";
+@import "enhancements";
+@import "services";
+@import "how-we-work";
+@import "testimonials";
+@import "our-clients";
+@import "hire-us";
+@import "page";

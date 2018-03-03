@@ -1,29 +1,11 @@
 .page {
+    padding-top: 4vw;
+}
 
-    &__header {
-        margin: 35px 0 45px;
-        @include breakpoint(small) {
-            margin: 8vw 0 10vw;
-        }
-    }
+.page__heading {
+    margin-bottom: 4vw;
+}
 
-    &__title {
-
-        font-size: 35px;
-        font-family: 'Gotham Pro Bold', sans-serif;
-        color: $darkblue;
-
-        @include breakpoint(medium) {
-            margin: 5vw 0 25px;
-            font-size: 30px;
-        }
-
-    }
-
-    &__subtitle {
-        line-height: 1.5;
-        color: $lightgray;
-        font-size: 25px;
-    }
-
+.page__section {
+    margin: 5vw 0
 }

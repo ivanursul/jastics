@@ -1,31 +1,43 @@
-<footer class="site-footer">
+<footer class="site-footer navbar navbar-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 text-center">
+                <div class="footer-main">GET IN TOUCH</div>
+                <div class="footer-sub">
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </div>
+                <div class="footer-icons">
+                    <a class="footer-icon-link" href="{{ site.linkedin_url }}" title="Linkedin">
+                        <svg class="footer-icon">
+                            <title>Linkedin</title>
+                            <use xlink:href="#icon-linkedin" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.upwork_url }}" title="Upwork">
+                        <svg class="footer-icon">
+                            <title>Upwork</title>
+                            <use xlink:href="#icon-upwork" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.twitter_url }}" title="Twitter">
+                        <svg class="footer-icon">
+                            <title>Twitter</title>
+                            <use xlink:href="#icon-twitter" />
+                        </svg>
+                    </a>
+                    <a class="footer-icon-link" href="{{ site.instagram_url }}" title="Instagram">
+                        <svg class="footer-icon">
+                            <title>Instagram</title>
+                            <use xlink:href="#icon-instagram" />
+                        </svg>
+                    </a>
 
-    <p class="site-footer__title">
-        Get in touch
-    </p>
-
-    <p class="site-footer__email">
-        <!-- <span class="site-footer__email-icon"> -->
-            {% include svg/icon.html id='mail-envelope' classes='site-footer__email-icon-svg' %}
-        <!-- </span> -->
-        <span class="site-footer__email-text">
-            {{ site.email }}
-        </span>
-    </p>
-
-    <div class="site-footer__social-icons">
-        <a href="{{ site.twitter_url }}" class="social-icon social-icon--footer">
-            {% include svg/icon.html id='twitter-icon' %}
-        </a>
-        <a href="{{ site.linkedin_url }}" class="social-icon social-icon--footer">
-            {% include svg/icon.html id='linkedin-icon' %}
-        </a>
-        <a href="{{ site.linkedin_url }}" class="social-icon social-icon--footer">
-            {% include svg/icon.html id='facebook-icon' %}
-        </a>
-        <a href="{{ site.upwork_url }}" class="social-icon social-icon--footer social-icon--footer-upwork">
-            {% include svg/icon.html id='upwork-icon' %}
-        </a>
-    </div>    
-
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+
+{% include scripts.html %}
+
+{% include menu_modal.html %}
