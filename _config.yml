@@ -37,6 +37,10 @@ twitter_url: https://twitter.com/jastics
 upwork_url:  https://www.upwork.com/agencies/~013609ed8111b7920c
 instagram_url: https://www.instagram.com/jasticslabs/
 
+# Used in Formspree contact form
+contact_email: me@ivanursul.com
+
+
 paginate: 5
 paginate_path: "/blog/page/:num/"
 

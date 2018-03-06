@@ -18,20 +18,8 @@
 
         <div class="hire-us__content">
 
-            <form action="https://formspree.io/me@ivanursul.com" method="POST">
-                <input type="text" placeholder="Name" class="hire-us__input hire-us__input--text">
-                <input type="text" placeholder="Email/phone" class="hire-us__input hire-us__input--text">
-                <textarea class="hire-us__input hire-us__input--textarea" placeholder="Basic info we need to know" rows="10"></textarea>
-            </form>
+            {% include hire-us-form.html %}
 
-        </div>
-
-        <div class="hire-us__btn">
-            <button type="submit" class="hire-us-btn hire-us-btn--blue hire-us-btn--send hire-us-btn--centered">
-                <span class="hire-us-btn__text hire-us-btn__text--send">
-                    Send
-                </span>
-            </button>
         </div>
 
     </div>

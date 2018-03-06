@@ -1,0 +1,18 @@
+<form action="https://formspree.io/{{ site.contact_email }}" method="POST">
+            
+    <input type="text" name="name" placeholder="Name" class="hire-us__input hire-us__input--text" required>
+    <input type="text" name="info" placeholder="Email/phone" class="hire-us__input hire-us__input--text" required>
+    <textarea name="description" class="hire-us__input hire-us__input--textarea" placeholder="Basic info we need to know" rows="10" required></textarea>
+
+    <input type="hidden" name="_next" value="{{ site.url }}/">
+    <input type="hidden" name="_subject" value="New Request">
+
+    <div class="hire-us__btn">
+        <button type="submit" class="hire-us-btn hire-us-btn--blue hire-us-btn--send hire-us-btn--centered">
+            <span class="hire-us-btn__text hire-us-btn__text--send">
+                Send
+            </span>
+        </button>
+    </div>
+
+</form>
